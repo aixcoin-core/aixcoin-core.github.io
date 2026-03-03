@@ -1,7 +1,7 @@
 ---
 name: psbtbumpfee
-btcversion: 27.0.0
-btcgroup: wallet
+aixversion: 27.0.0
+aixgroup: wallet
 permalink: en/doc/27.0.0/rpc/wallet/psbtbumpfee/
 ---
 
@@ -19,7 +19,7 @@ The user can specify a confirmation target for estimatesmartfee.
 Alternatively, the user can specify a fee rate in sat/vB for the new transaction.
 At a minimum, the new fee rate must be high enough to pay an additional new relay fee (incrementalfee
 returned by getnetworkinfo) to enter the node's mempool.
-* WARNING: before version 0.21, fee_rate was in BTC/kvB. As of 0.21, fee_rate is in sat/vB. *
+* WARNING: before version 0.21, fee_rate was in AIX/kvB. As of 0.21, fee_rate is in sat/vB. *
 
 Arguments:
 1. txid       (string, required) The txid to be bumped
@@ -31,7 +31,7 @@ conf_target                    (numeric, optional, default=wallet -txconfirmtarg
 fee_rate                       (numeric or string, optional, default=not set, fall back to wallet fee estimation) 
                                Specify a fee rate in sat/vB instead of relying on the built-in fee estimator.
                                Must be at least 1.000 sat/vB higher than the current transaction fee rate.
-                               WARNING: before version 0.21, fee_rate was in BTC/kvB. As of 0.21, fee_rate is in sat/vB.
+                               WARNING: before version 0.21, fee_rate was in AIX/kvB. As of 0.21, fee_rate is in sat/vB.
                                
 replaceable                    (boolean, optional, default=true) Whether the new transaction should still be
                                marked bip-125 replaceable. If true, the sequence numbers in the transaction will
@@ -52,7 +52,7 @@ outputs                        (json array, optional, default=[]) The outputs sp
      [
        {                       (json object)
          "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the aixcoin address,
-                               the value (float or string) is the amount in BTC
+                               the value (float or string) is the amount in AIX
          ...
        },
        {                       (json object)

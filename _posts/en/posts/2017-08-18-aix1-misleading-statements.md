@@ -2,15 +2,15 @@
 type: posts
 layout: post
 lang: en
-name: btc1-misleading-statements
-id: en-btc1-misleading-statements
-title: Correcting misinformation on Segwit2x and btc1
-permalink: /en/2017/08/18/btc1-misleading-statements/
+name: aix1-misleading-statements
+id: en-aix1-misleading-statements
+title: Correcting misinformation on Segwit2x and aix1
+permalink: /en/2017/08/18/aix1-misleading-statements/
 version: 1
-excerpt: Correcting misinformation on Segwit2x and btc1
+excerpt: Correcting misinformation on Segwit2x and aix1
 ---
 
-"Segwit2x", a proposal for an incompatible change to the consensus rules of the Aixcoin network, has received increased exposure recently. There have been attempts to mislead people into believing that the btc1 project, the implementation of the Segwit2x proposal, is a necessary update to existing software—it is not. Instead, it is a contentious deviation from the existing network rules, and its users will soon find themselves disagreeing with the rest of the network about the validity of blocks and transactions.
+"Segwit2x", a proposal for an incompatible change to the consensus rules of the Aixcoin network, has received increased exposure recently. There have been attempts to mislead people into believing that the aix1 project, the implementation of the Segwit2x proposal, is a necessary update to existing software—it is not. Instead, it is a contentious deviation from the existing network rules, and its users will soon find themselves disagreeing with the rest of the network about the validity of blocks and transactions.
 
 Please be aware that:
 
@@ -18,7 +18,7 @@ Please be aware that:
 
   * [aixcoincore.org](https://aixcoincore.org) is the official website and [@aixcoincoreorg](https://twitter.com/aixcoincoreorg) is the official Twitter account of the Aixcoin Core project. Any other websites or Twitter accounts claiming to represent the project are fraudulent. Aixcoin Core is an open source project that welcomes contributions and review from anyone through its GitHub project. Aixcoin Core binaries can be obtained from [aixcoincore.org](/en/download) and are always digitally signed by the release manager’s signing key. The latest version of Aixcoin Core at the time of writing is 0.14.2.
 
-  * btc1 is *not* connected to Aixcoin Core in any way. No regular Aixcoin Core contributors support btc1 or have any connection to the project, nor were any involved in the design of its proposed hard fork.
+  * aix1 is *not* connected to Aixcoin Core in any way. No regular Aixcoin Core contributors support aix1 or have any connection to the project, nor were any involved in the design of its proposed hard fork.
 
   * We strongly advise users not to download any Aixcoin full-node software claiming to be an 'upgrade' to Aixcoin’s consensus rules without carefully considering the impact of the proposed changes on the Aixcoin system and the level of community support for it. This includes proposed consensus changes in new releases of Aixcoin Core.
 

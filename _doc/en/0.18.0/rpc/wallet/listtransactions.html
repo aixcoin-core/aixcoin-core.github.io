@@ -1,7 +1,7 @@
 ---
 name: listtransactions
-btcversion: 0.18.0
-btcgroup: wallet
+aixversion: 0.18.0
+aixgroup: wallet
 permalink: en/doc/0.18.0/rpc/wallet/listtransactions/
 ---
 
@@ -28,11 +28,11 @@ Result:
                 "generate"              Coinbase transactions received with more than 100 confirmations.
                 "immature"              Coinbase transactions received with 100 or fewer confirmations.
                 "orphan"                Orphaned coinbase transactions received.
-    "amount": x.xxx,          (numeric) The amount in BTC. This is negative for the 'send' category, and is positive
+    "amount": x.xxx,          (numeric) The amount in AIX. This is negative for the 'send' category, and is positive
                                         for all other categories
     "label": "label",       (string) A comment for the address/transaction, if any
     "vout": n,                (numeric) the vout value
-    "fee": x.xxx,             (numeric) The amount of the fee in BTC. This is negative and only available for the 
+    "fee": x.xxx,             (numeric) The amount of the fee in AIX. This is negative and only available for the 
                                          'send' category of transactions.
     "confirmations": n,       (numeric) The number of confirmations for the transaction. Negative confirmations indicate the
                                          transaction conflicts with the block chain

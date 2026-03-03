@@ -1,7 +1,7 @@
 ---
 name: fundrawtransaction
-btcversion: 22.0.0
-btcgroup: rawtransactions
+aixversion: 22.0.0
+aixgroup: rawtransactions
 permalink: en/doc/22.0.0/rpc/rawtransactions/fundrawtransaction/
 ---
 
@@ -35,7 +35,7 @@ Arguments:
                                       e.g. with 'importpubkey' or 'importmulti' with the 'pubkeys' or 'desc' field.
        "lockUnspents": bool,          (boolean, optional, default=false) Lock selected unspent outputs
        "fee_rate": amount,            (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in sat/vB.
-       "feeRate": amount,             (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in BTC/kvB.
+       "feeRate": amount,             (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in AIX/kvB.
        "subtractFeeFromOutputs": [    (json array, optional, default=[]) The integers.
                                       The fee will be equally deducted from the amount of each specified output.
                                       Those recipients will receive less aixcoins than you enter in their corresponding amount field.
@@ -61,7 +61,7 @@ Arguments:
 Result:
 {                     (json object)
   "hex" : "hex",      (string) The resulting raw transaction (hex-encoded string)
-  "fee" : n,          (numeric) Fee in BTC the resulting transaction pays
+  "fee" : n,          (numeric) Fee in AIX the resulting transaction pays
   "changepos" : n     (numeric) The position of the added change output, or -1
 }
 

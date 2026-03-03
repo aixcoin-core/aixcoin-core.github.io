@@ -1,7 +1,7 @@
 ---
 name: listsinceblock
-btcversion: 30.0.0
-btcgroup: wallet
+aixversion: 30.0.0
+aixgroup: wallet
 permalink: en/doc/30.0.0/rpc/wallet/listsinceblock/
 ---
 
@@ -33,10 +33,10 @@ Result:
                                        "generate"              Coinbase transactions received with more than 100 confirmations.
                                        "immature"              Coinbase transactions received with 100 or fewer confirmations.
                                        "orphan"                Orphaned coinbase transactions received.
-      "amount" : n,                    (numeric) The amount in BTC. This is negative for the 'send' category, and is positive
+      "amount" : n,                    (numeric) The amount in AIX. This is negative for the 'send' category, and is positive
                                        for all other categories
       "vout" : n,                      (numeric) the vout value
-      "fee" : n,                       (numeric, optional) The amount of the fee in BTC. This is negative and only available for the
+      "fee" : n,                       (numeric, optional) The amount of the fee in AIX. This is negative and only available for the
                                        'send' category of transactions.
       "confirmations" : n,             (numeric) The number of confirmations for the transaction. Negative confirmations means the
                                        transaction conflicted that many blocks ago.

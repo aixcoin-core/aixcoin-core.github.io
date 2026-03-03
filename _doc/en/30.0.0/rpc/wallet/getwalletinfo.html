@@ -1,7 +1,7 @@
 ---
 name: getwalletinfo
-btcversion: 30.0.0
-btcgroup: wallet
+aixversion: 30.0.0
+aixgroup: wallet
 permalink: en/doc/30.0.0/rpc/wallet/getwalletinfo/
 ---
 
@@ -18,7 +18,7 @@ Result:
   "keypoolsize" : n,                      (numeric) how many new keys are pre-generated (only counts external keys)
   "keypoolsize_hd_internal" : n,          (numeric, optional) how many new keys are pre-generated for internal use (used for change outputs, only appears if the wallet is using this feature, otherwise external keys are used)
   "unlocked_until" : xxx,                 (numeric, optional) the UNIX epoch time until which the wallet is unlocked for transfers, or 0 if the wallet is locked (only present for passphrase-encrypted wallets)
-  "paytxfee" : n,                         (numeric) the transaction fee configuration, set in BTC/kvB
+  "paytxfee" : n,                         (numeric) the transaction fee configuration, set in AIX/kvB
   "private_keys_enabled" : true|false,    (boolean) false if privatekeys are disabled for this wallet (enforced watch-only wallet)
   "avoid_reuse" : true|false,             (boolean) whether this wallet tracks clean/dirty coins in terms of reuse
   "scanning" : {                          (json object) current scanning details, or false if no scan is in progress

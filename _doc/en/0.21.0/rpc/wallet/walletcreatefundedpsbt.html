@@ -1,7 +1,7 @@
 ---
 name: walletcreatefundedpsbt
-btcversion: 0.21.0
-btcgroup: wallet
+aixversion: 0.21.0
+aixgroup: wallet
 permalink: en/doc/0.21.0/rpc/wallet/walletcreatefundedpsbt/
 ---
 
@@ -26,7 +26,7 @@ Arguments:
                                       accepted as second parameter.
      [
        {                              (json object)
-         "address": amount,           (numeric or string, required) A key-value pair. The key (string) is the aixcoin address, the value (float or string) is the amount in BTC
+         "address": amount,           (numeric or string, required) A key-value pair. The key (string) is the aixcoin address, the value (float or string) is the amount in AIX
        },
        {                              (json object)
          "data": "hex",               (string, required) A key-value pair. The key must be "data", the value is hex-encoded data
@@ -43,7 +43,7 @@ Arguments:
        "includeWatching": bool,       (boolean, optional, default=true for watch-only wallets, otherwise false) Also select inputs which are watch only
        "lockUnspents": bool,          (boolean, optional, default=false) Lock selected unspent outputs
        "fee_rate": amount,            (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in sat/vB.
-       "feeRate": amount,             (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in BTC/kvB.
+       "feeRate": amount,             (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in AIX/kvB.
        "subtractFeeFromOutputs": [    (json array, optional, default=empty array) The outputs to subtract the fee from.
                                       The fee will be equally deducted from the amount of each specified output.
                                       Those recipients will receive less aixcoins than you enter in their corresponding amount field.
@@ -64,7 +64,7 @@ Arguments:
 Result:
 {                     (json object)
   "psbt" : "str",     (string) The resulting raw transaction (base64-encoded string)
-  "fee" : n,          (numeric) Fee in BTC the resulting transaction pays
+  "fee" : n,          (numeric) Fee in AIX the resulting transaction pays
   "changepos" : n     (numeric) The position of the added change output, or -1
 }
 

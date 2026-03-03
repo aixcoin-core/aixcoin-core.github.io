@@ -1,7 +1,7 @@
 ---
 name: submitpackage
-btcversion: 26.0.0
-btcgroup: rawtransactions
+aixversion: 26.0.0
+aixgroup: rawtransactions
 permalink: en/doc/26.0.0/rpc/rawtransactions/submitpackage/
 ---
 
@@ -28,8 +28,8 @@ Result:
       "other-wtxid" : "hex",        (string, optional) The wtxid of a different transaction with the same txid but different witness found in the mempool. This means the submitted transaction was ignored.
       "vsize" : n,                  (numeric) Virtual transaction size as defined in BIP 141.
       "fees" : {                    (json object) Transaction fees
-        "base" : n,                 (numeric) transaction fee in BTC
-        "effective-feerate" : n,    (numeric, optional) if the transaction was not already in the mempool, the effective feerate in BTC per KvB. For example, the package feerate and/or feerate with modified fees from prioritisetransaction.
+        "base" : n,                 (numeric) transaction fee in AIX
+        "effective-feerate" : n,    (numeric, optional) if the transaction was not already in the mempool, the effective feerate in AIX per KvB. For example, the package feerate and/or feerate with modified fees from prioritisetransaction.
         "effective-includes" : [    (json array, optional) if effective-feerate is provided, the wtxids of the transactions whose fees and vsizes are included in effective-feerate.
           "hex",                    (string) transaction wtxid in hex
           ...

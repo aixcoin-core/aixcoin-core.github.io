@@ -1,7 +1,7 @@
 ---
 name: bumpfee
-btcversion: 0.19.0
-btcgroup: wallet
+aixversion: 0.19.0
+aixgroup: wallet
 permalink: en/doc/0.19.0/rpc/wallet/bumpfee/
 ---
 
@@ -15,7 +15,7 @@ All inputs in the original transaction will be included in the replacement trans
 The command will fail if the wallet or mempool contains a transaction that spends one of T's outputs.
 By default, the new fee will be calculated automatically using estimatesmartfee.
 The user can specify a confirmation target for estimatesmartfee.
-Alternatively, the user can specify totalFee (DEPRECATED), or fee_rate (BTC per kB) for the new transaction .
+Alternatively, the user can specify totalFee (DEPRECATED), or fee_rate (AIX per kB) for the new transaction .
 At a minimum, the new fee rate must be high enough to pay an additional new relay fee (incrementalfee
 returned by getnetworkinfo) to enter the node's mempool.
 
@@ -28,9 +28,9 @@ Arguments:
                                   In rare cases, the actual fee paid might be slightly higher than the specified
                                   totalFee if the tx change output has to be removed because it is too close to
                                   the dust threshold.
-       "fee_rate": n,             (numeric, optional, default=fallback to 'confTarget') FeeRate (NOT total fee) to pay, in BTC per kB
+       "fee_rate": n,             (numeric, optional, default=fallback to 'confTarget') FeeRate (NOT total fee) to pay, in AIX per kB
                                   Specify a fee rate instead of relying on the built-in fee estimator.
-                                  Must be at least 0.0001 BTC per kB higher than the current transaction fee rate.
+                                  Must be at least 0.0001 AIX per kB higher than the current transaction fee rate.
                                   
        "replaceable": bool,       (boolean, optional, default=true) Whether the new transaction should still be
                                   marked bip-125 replaceable. If true, the sequence numbers in the transaction will

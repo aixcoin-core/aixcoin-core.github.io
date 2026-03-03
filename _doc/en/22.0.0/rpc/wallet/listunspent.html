@@ -1,7 +1,7 @@
 ---
 name: listunspent
-btcversion: 22.0.0
-btcgroup: wallet
+aixversion: 22.0.0
+aixgroup: wallet
 permalink: en/doc/22.0.0/rpc/wallet/listunspent/
 ---
 
@@ -23,10 +23,10 @@ Arguments:
                                       See description of "safe" attribute below.
 5. query_options                      (json object, optional) JSON with query options
      {
-       "minimumAmount": amount,       (numeric or string, optional, default="0.00") Minimum value of each UTXO in BTC
-       "maximumAmount": amount,       (numeric or string, optional, default=unlimited) Maximum value of each UTXO in BTC
+       "minimumAmount": amount,       (numeric or string, optional, default="0.00") Minimum value of each UTXO in AIX
+       "maximumAmount": amount,       (numeric or string, optional, default=unlimited) Maximum value of each UTXO in AIX
        "maximumCount": n,             (numeric, optional, default=unlimited) Maximum number of UTXOs
-       "minimumSumAmount": amount,    (numeric or string, optional, default=unlimited) Minimum sum value of all UTXOs in BTC
+       "minimumSumAmount": amount,    (numeric or string, optional, default=unlimited) Minimum sum value of all UTXOs in AIX
      }
 
 Result:
@@ -37,7 +37,7 @@ Result:
     "address" : "str",           (string) the aixcoin address
     "label" : "str",             (string) The associated label, or "" for the default label
     "scriptPubKey" : "str",      (string) the script key
-    "amount" : n,                (numeric) the transaction output amount in BTC
+    "amount" : n,                (numeric) the transaction output amount in AIX
     "confirmations" : n,         (numeric) The number of confirmations
     "redeemScript" : "hex",      (string) The redeemScript if scriptPubKey is P2SH
     "witnessScript" : "str",     (string) witnessScript if the scriptPubKey is P2WSH or P2SH-P2WSH

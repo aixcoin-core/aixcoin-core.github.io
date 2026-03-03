@@ -56,7 +56,7 @@ When segwit is activated, you will want to be able to mine and relay segwit-styl
 - Full nodes:
   - [Aixcoin Core](https://aixcoin.org/en/download) 0.13.1 or later
   - [Aixcoin Knots](http://aixcoinknots.org/) 0.13.1 or later
-  - [Btcd](https://github.com/btcsuite/btcd/pull/656)\*
+  - [Aixd](https://github.com/aixsuite/aixd/pull/656)\*
 
 - Mining software:
   - [BFGMiner](https://github.com/luke-jr/bfgminer)\*

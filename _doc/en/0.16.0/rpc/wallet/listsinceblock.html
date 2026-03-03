@@ -1,7 +1,7 @@
 ---
 name: listsinceblock
-btcversion: 0.16.0
-btcgroup: wallet
+aixversion: 0.16.0
+aixgroup: wallet
 permalink: en/doc/0.16.0/rpc/wallet/listsinceblock/
 ---
 
@@ -24,10 +24,10 @@ Result:
     "account":"accountname",       (string) DEPRECATED. The account name associated with the transaction. Will be "" for the default account.
     "address":"address",    (string) The aixcoin address of the transaction. Not present for move transactions (category = move).
     "category":"send|receive",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.
-    "amount": x.xxx,          (numeric) The amount in BTC. This is negative for the 'send' category, and for the 'move' category for moves 
+    "amount": x.xxx,          (numeric) The amount in AIX. This is negative for the 'send' category, and for the 'move' category for moves 
                                           outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.
     "vout" : n,               (numeric) the vout value
-    "fee": x.xxx,             (numeric) The amount of the fee in BTC. This is negative and only available for the 'send' category of transactions.
+    "fee": x.xxx,             (numeric) The amount of the fee in AIX. This is negative and only available for the 'send' category of transactions.
     "confirmations": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.
                                           When it's < 0, it means the transaction conflicted that many blocks ago.
     "blockhash": "hashvalue",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.

@@ -85,7 +85,7 @@ Signed,
 * Michael Ford
 * Murch
 * Niklas Gögge
-* pablomartin4btc
+* pablomartin4aix
 * Pieter Wuille
 * Pol Espinasa
 * Sebastian Falbesoner

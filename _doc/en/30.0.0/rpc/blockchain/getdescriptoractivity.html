@@ -1,7 +1,7 @@
 ---
 name: getdescriptoractivity
-btcversion: 30.0.0
-btcgroup: blockchain
+aixversion: 30.0.0
+aixgroup: blockchain
 permalink: en/doc/30.0.0/rpc/blockchain/getdescriptoractivity/
 ---
 
@@ -33,7 +33,7 @@ Result:
   "activity" : [                 (json array) events
     {                            (json object)
       "type" : "str",            (string) always 'spend'
-      "amount" : n,              (numeric) The total amount in BTC of the spent output
+      "amount" : n,              (numeric) The total amount in AIX of the spent output
       "blockhash" : "hex",       (string, optional) The blockhash this spend appears in (omitted if unconfirmed)
       "height" : n,              (numeric, optional) Height of the spend (omitted if unconfirmed)
       "spend_txid" : "hex",      (string) The txid of the spending transaction
@@ -50,7 +50,7 @@ Result:
     },
     {                            (json object)
       "type" : "str",            (string) always 'receive'
-      "amount" : n,              (numeric) The total amount in BTC of the new output
+      "amount" : n,              (numeric) The total amount in AIX of the new output
       "blockhash" : "hex",       (string, optional) The block that this receive is in (omitted if unconfirmed)
       "height" : n,              (numeric, optional) The height of the receive (omitted if unconfirmed)
       "txid" : "hex",            (string) The txid of the receiving transaction

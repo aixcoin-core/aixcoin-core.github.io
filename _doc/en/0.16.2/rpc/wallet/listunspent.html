@@ -1,7 +1,7 @@
 ---
 name: listunspent
-btcversion: 0.16.2
-btcgroup: wallet
+aixversion: 0.16.2
+aixgroup: wallet
 permalink: en/doc/0.16.2/rpc/wallet/listunspent/
 ---
 
@@ -23,10 +23,10 @@ Arguments:
                   See description of "safe" attribute below.
 5. query_options    (json, optional) JSON with query options
     {
-      "minimumAmount"    (numeric or string, default=0) Minimum value of each UTXO in BTC
-      "maximumAmount"    (numeric or string, default=unlimited) Maximum value of each UTXO in BTC
+      "minimumAmount"    (numeric or string, default=0) Minimum value of each UTXO in AIX
+      "maximumAmount"    (numeric or string, default=unlimited) Maximum value of each UTXO in AIX
       "maximumCount"     (numeric or string, default=unlimited) Maximum number of UTXOs
-      "minimumSumAmount" (numeric or string, default=unlimited) Minimum sum value of all UTXOs in BTC
+      "minimumSumAmount" (numeric or string, default=unlimited) Minimum sum value of all UTXOs in AIX
     }
 
 Result
@@ -37,7 +37,7 @@ Result
     "address" : "address",    (string) the aixcoin address
     "account" : "account",    (string) DEPRECATED. The associated account, or "" for the default account
     "scriptPubKey" : "key",   (string) the script key
-    "amount" : x.xxx,         (numeric) the transaction output amount in BTC
+    "amount" : x.xxx,         (numeric) the transaction output amount in AIX
     "confirmations" : n,      (numeric) The number of confirmations
     "redeemScript" : n        (string) The redeemScript if scriptPubKey is P2SH
     "spendable" : xxx,        (bool) Whether we have the private keys to spend this output

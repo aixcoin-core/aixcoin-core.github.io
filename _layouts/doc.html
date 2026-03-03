@@ -2,10 +2,10 @@
 {% include browser_magic.html %}
 <head>
 {% if page.name != "index" and page.name != "rpcindex" %}
-  {% assign custom_title = page.name | append: " (" | append: page.btcversion | append: " RPC)" %}
+  {% assign custom_title = page.name | append: " (" | append: page.aixversion | append: " RPC)" %}
 {% else %}
-  {% if page.btcversion != "index" %}
-    {% assign custom_title = "Aixcoin Core " | append: page.btcversion | append: " RPC" %}
+  {% if page.aixversion != "index" %}
+    {% assign custom_title = "Aixcoin Core " | append: page.aixversion | append: " RPC" %}
   {% else %}
     {% assign custom_title = "Aixcoin Core RPC" %}
   {% endif %}
@@ -23,14 +23,14 @@
   <div class="article-author-side">
     <div>
       <p>
-        {% if page.btcversion != "index" %}
+        {% if page.aixversion != "index" %}
           <!-- Since v22, the patch number is omitted in git tags, unless it is non-zero:
             version  -> tag
             0.21.0   -> v0.21.0
             22.0.0   -> v22.0
             24.0.1   -> v24.0.1
           -->
-          {% assign tag_version = page.btcversion | replace: ".0.0", ".0" %}
+          {% assign tag_version = page.aixversion | replace: ".0.0", ".0" %}
           Documentation exported from <a href="https://github.com/aixcoin/aixcoin/tree/v{{ tag_version }}">Aixcoin Core {{ tag_version }}</a>
         {% endif %}
       </p>
@@ -39,8 +39,8 @@
   <article class="page">
     <h1>{{ custom_title | xml_escape }}</h1>
     <div class="article-wrap">
-      {% if page.btcversion != "index" %}
-        {% assign groups = site.doc | where:"btcversion", page.btcversion | group_by:"btcgroup" | sort: "name" %}
+      {% if page.aixversion != "index" %}
+        {% assign groups = site.doc | where:"aixversion", page.aixversion | group_by:"aixgroup" | sort: "name" %}
         <section class="toc">
         <input id="searchbar" type="text" value="" placeholder="Search ..."/>
         {% for group in groups %}
@@ -68,11 +68,11 @@
 {% highlight text %}{{ content }}{% endhighlight %}
 </span>
       {% else %}
-        {% if page.btcversion != "index" %}
+        {% if page.aixversion != "index" %}
           Select a command group in the menu.
         {% else %}
           Following docs are available:
-          {% assign groups = site.doc | sort: "btcversion" | reverse | group_by:"btcversion" %}
+          {% assign groups = site.doc | sort: "aixversion" | reverse | group_by:"aixversion" %}
           <ul>
             {% for group in groups %}
               {% if group.name != "index" %}

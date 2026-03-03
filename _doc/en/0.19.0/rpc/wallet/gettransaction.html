@@ -1,7 +1,7 @@
 ---
 name: gettransaction
-btcversion: 0.19.0
-btcgroup: wallet
+aixversion: 0.19.0
+aixgroup: wallet
 permalink: en/doc/0.19.0/rpc/wallet/gettransaction/
 ---
 
@@ -16,8 +16,8 @@ Arguments:
 
 Result:
 {
-  "amount" : x.xxx,        (numeric) The transaction amount in BTC
-  "fee": x.xxx,            (numeric) The amount of the fee in BTC. This is negative and only available for the 
+  "amount" : x.xxx,        (numeric) The transaction amount in AIX
+  "fee": x.xxx,            (numeric) The amount of the fee in AIX. This is negative and only available for the 
                               'send' category of transactions.
   "confirmations" : n,     (numeric) The number of confirmations
   "blockhash" : "hash",  (string) The block hash
@@ -37,10 +37,10 @@ Result:
                    "generate"              Coinbase transactions received with more than 100 confirmations.
                    "immature"              Coinbase transactions received with 100 or fewer confirmations.
                    "orphan"                Orphaned coinbase transactions received.
-      "amount" : x.xxx,                 (numeric) The amount in BTC
+      "amount" : x.xxx,                 (numeric) The amount in AIX
       "label" : "label",              (string) A comment for the address/transaction, if any
       "vout" : n,                       (numeric) the vout value
-      "fee": x.xxx,                     (numeric) The amount of the fee in BTC. This is negative and only available for the 
+      "fee": x.xxx,                     (numeric) The amount of the fee in AIX. This is negative and only available for the 
                                            'send' category of transactions.
       "abandoned": xxx                  (bool) 'true' if the transaction has been abandoned (inputs are respendable). Only available for the 
                                            'send' category of transactions.

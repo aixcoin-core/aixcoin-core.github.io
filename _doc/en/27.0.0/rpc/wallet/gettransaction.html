@@ -1,7 +1,7 @@
 ---
 name: gettransaction
-btcversion: 27.0.0
-btcgroup: wallet
+aixversion: 27.0.0
+aixgroup: wallet
 permalink: en/doc/27.0.0/rpc/wallet/gettransaction/
 ---
 
@@ -16,8 +16,8 @@ Arguments:
 
 Result:
 {                                          (json object)
-  "amount" : n,                            (numeric) The amount in BTC
-  "fee" : n,                               (numeric, optional) The amount of the fee in BTC. This is negative and only available for the
+  "amount" : n,                            (numeric) The amount in AIX
+  "fee" : n,                               (numeric, optional) The amount of the fee in AIX. This is negative and only available for the
                                            'send' category of transactions.
   "confirmations" : n,                     (numeric) The number of confirmations for the transaction. Negative confirmations means the
                                            transaction conflicted that many blocks ago.
@@ -56,10 +56,10 @@ Result:
                                            "generate"              Coinbase transactions received with more than 100 confirmations.
                                            "immature"              Coinbase transactions received with 100 or fewer confirmations.
                                            "orphan"                Orphaned coinbase transactions received.
-      "amount" : n,                        (numeric) The amount in BTC
+      "amount" : n,                        (numeric) The amount in AIX
       "label" : "str",                     (string, optional) A comment for the address/transaction, if any
       "vout" : n,                          (numeric) the vout value
-      "fee" : n,                           (numeric, optional) The amount of the fee in BTC. This is negative and only available for the 
+      "fee" : n,                           (numeric, optional) The amount of the fee in AIX. This is negative and only available for the 
                                            'send' category of transactions.
       "abandoned" : true|false,            (boolean) 'true' if the transaction has been abandoned (inputs are respendable).
       "parent_descs" : [                   (json array, optional) Only if 'category' is 'received'. List of parent descriptors for the scriptPubKey of this coin.

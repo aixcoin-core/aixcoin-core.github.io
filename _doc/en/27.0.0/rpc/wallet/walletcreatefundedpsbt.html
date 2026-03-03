@@ -1,7 +1,7 @@
 ---
 name: walletcreatefundedpsbt
-btcversion: 27.0.0
-btcgroup: wallet
+aixversion: 27.0.0
+aixgroup: wallet
 permalink: en/doc/27.0.0/rpc/wallet/walletcreatefundedpsbt/
 ---
 
@@ -31,7 +31,7 @@ Arguments:
      [
        {                       (json object)
          "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the aixcoin address,
-                               the value (float or string) is the amount in BTC
+                               the value (float or string) is the amount in AIX
          ...
        },
        {                       (json object)
@@ -57,7 +57,7 @@ change_type                (string, optional, default=set by -changetype) The ou
 includeWatching            (boolean, optional, default=true for watch-only wallets, otherwise false) Also select inputs which are watch only
 lockUnspents               (boolean, optional, default=false) Lock selected unspent outputs
 fee_rate                   (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in sat/vB.
-feeRate                    (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in BTC/kvB.
+feeRate                    (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in AIX/kvB.
 subtractFeeFromOutputs     (json array, optional, default=[]) The outputs to subtract the fee from.
                            The fee will be equally deducted from the amount of each specified output.
                            Those recipients will receive less aixcoins than you enter in their corresponding amount field.
@@ -93,7 +93,7 @@ solving_data               (json object, optional) Keys and scripts needed for p
 Result:
 {                     (json object)
   "psbt" : "str",     (string) The resulting raw transaction (base64-encoded string)
-  "fee" : n,          (numeric) Fee in BTC the resulting transaction pays
+  "fee" : n,          (numeric) Fee in AIX the resulting transaction pays
   "changepos" : n     (numeric) The position of the added change output, or -1
 }
 

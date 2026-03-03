@@ -1,7 +1,7 @@
 ---
 name: sendfrom
-btcversion: 0.16.2
-btcgroup: wallet
+aixversion: 0.16.2
+aixgroup: wallet
 permalink: en/doc/0.16.2/rpc/wallet/sendfrom/
 ---
 
@@ -15,7 +15,7 @@ Arguments:
                        transaction with the account, so the account's balance computation and transaction history can reflect
                        the spend.
 2. "toaddress"         (string, required) The aixcoin address to send funds to.
-3. amount                (numeric or string, required) The amount in BTC (transaction fee is added on top).
+3. amount                (numeric or string, required) The amount in AIX (transaction fee is added on top).
 4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.
 5. "comment"           (string, optional) A comment used to store what the transaction is for. 
                                      This is not part of the transaction, just kept in your wallet.
@@ -28,7 +28,7 @@ Result:
 
 Examples:
 
-Send 0.01 BTC from the default account to the address, must have at least 1 confirmation
+Send 0.01 AIX from the default account to the address, must have at least 1 confirmation
 > aixcoin-cli sendfrom "" "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.01
 
 Send 0.01 from the tabby account to the given address, funds must have at least 6 confirmations

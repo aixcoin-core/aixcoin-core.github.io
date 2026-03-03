@@ -1,7 +1,7 @@
 ---
 name: sendrawtransaction
-btcversion: 28.0.0
-btcgroup: rawtransactions
+aixversion: 28.0.0
+aixgroup: rawtransactions
 permalink: en/doc/28.0.0/rpc/rawtransactions/sendrawtransaction/
 ---
 
@@ -19,10 +19,10 @@ Related RPCs: createrawtransaction, signrawtransactionwithkey
 
 Arguments:
 1. hexstring        (string, required) The hex string of the raw transaction
-2. maxfeerate       (numeric or string, optional, default="0.10") Reject transactions whose fee rate is higher than the specified value, expressed in BTC/kvB.
-                    Fee rates larger than 1BTC/kvB are rejected.
+2. maxfeerate       (numeric or string, optional, default="0.10") Reject transactions whose fee rate is higher than the specified value, expressed in AIX/kvB.
+                    Fee rates larger than 1AIX/kvB are rejected.
                     Set to 0 to accept any fee rate.
-3. maxburnamount    (numeric or string, optional, default="0.00") Reject transactions with provably unspendable outputs (e.g. 'datacarrier' outputs that use the OP_RETURN opcode) greater than the specified value, expressed in BTC.
+3. maxburnamount    (numeric or string, optional, default="0.00") Reject transactions with provably unspendable outputs (e.g. 'datacarrier' outputs that use the OP_RETURN opcode) greater than the specified value, expressed in AIX.
                     If burning funds through unspendable outputs is desired, increase this value.
                     This check is based on heuristics and does not guarantee spendability of outputs.
                     

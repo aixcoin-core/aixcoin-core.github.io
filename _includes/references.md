@@ -5,7 +5,7 @@
 [Antti Majakivi]: https://github.com/anduck
 [Bob McElrath]: https://github.com/mcelrath
 [Bryan Bishop]: https://github.com/kanzure
-[BtcDrak]: https://github.com/btcdrak
+[AixDrak]: https://github.com/aixdrak
 [Chris Stewart]: https://github.com/Christewart
 [Clark Moody]: https://github.com/clarkmoody
 [Clem Taylor]: https://github.com/clemtaylor

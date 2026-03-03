@@ -1,7 +1,7 @@
 ---
 name: send
-btcversion: 22.0.0
-btcgroup: wallet
+aixversion: 22.0.0
+aixgroup: wallet
 permalink: en/doc/22.0.0/rpc/wallet/send/
 ---
 
@@ -17,7 +17,7 @@ Arguments:
                                          For convenience, a dictionary, which holds the key-value pairs directly, is also accepted.
      [
        {                                 (json object)
-         "address": amount,              (numeric or string, required) A key-value pair. The key (string) is the aixcoin address, the value (float or string) is the amount in BTC
+         "address": amount,              (numeric or string, required) A key-value pair. The key (string) is the aixcoin address, the value (float or string) is the amount in AIX
          ...
        },
        {                                 (json object)
@@ -80,16 +80,16 @@ Result:
 
 Examples:
 
-Send 0.1 BTC with a confirmation target of 6 blocks in economical fee estimate mode
+Send 0.1 AIX with a confirmation target of 6 blocks in economical fee estimate mode
 > aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.1}' 6 economical
 
-Send 0.2 BTC with a fee rate of 1.1 sat/vB using positional arguments
+Send 0.2 AIX with a fee rate of 1.1 sat/vB using positional arguments
 > aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.2}' null "unset" 1.1
 
-Send 0.2 BTC with a fee rate of 1 sat/vB using the options argument
+Send 0.2 AIX with a fee rate of 1 sat/vB using the options argument
 > aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.2}' null "unset" null '{"fee_rate": 1}'
 
-Send 0.3 BTC with a fee rate of 25 sat/vB using named arguments
+Send 0.3 AIX with a fee rate of 25 sat/vB using named arguments
 > aixcoin-cli -named send outputs='{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.3}' fee_rate=25
 
 Create a transaction that should confirm the next block, with a specific input, and return result without adding to wallet or broadcasting to the network

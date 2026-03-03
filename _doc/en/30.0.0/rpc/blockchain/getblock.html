@@ -1,7 +1,7 @@
 ---
 name: getblock
-btcversion: 30.0.0
-btcgroup: blockchain
+aixversion: 30.0.0
+aixgroup: blockchain
 permalink: en/doc/30.0.0/rpc/blockchain/getblock/
 ---
 
@@ -52,7 +52,7 @@ Result (for verbosity = 2):
   "tx" : [          (json array)
     {               (json object)
       ...,          The transactions in the format of the getrawtransaction RPC. Different from verbosity = 1 "tx" result
-      "fee" : n     (numeric) The transaction fee in BTC, omitted if block undo data is not available
+      "fee" : n     (numeric) The transaction fee in AIX, omitted if block undo data is not available
     },
     ...
   ]
@@ -69,7 +69,7 @@ Result (for verbosity = 3):
           "prevout" : {                  (json object) (Only if undo information is available)
             "generated" : true|false,    (boolean) Coinbase or not
             "height" : n,                (numeric) The height of the prevout
-            "value" : n,                 (numeric) The value in BTC
+            "value" : n,                 (numeric) The value in AIX
             "scriptPubKey" : {           (json object)
               "asm" : "str",             (string) Disassembly of the output script
               "desc" : "str",            (string) Inferred descriptor for the output

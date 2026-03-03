@@ -30,11 +30,11 @@
                           {% if link[0] == 'dev' %}
                             <li>
                               {% for article in site.doc %}
-                                {% if article.btcversion == "index" %}
+                                {% if article.aixversion == "index" %}
                                   <a href="{{article.url}}">RPC Docs</a>
                                 {% endif %}
                               {% endfor %}
-                              {% assign groups = site.doc | group_by:"btcversion" | sort_by: "btcversion" | reverse %}
+                              {% assign groups = site.doc | group_by:"aixversion" | sort_by: "aixversion" | reverse %}
                               <ul>
                                 {% for group in groups %}
                                   {% if group.name != "index" %}

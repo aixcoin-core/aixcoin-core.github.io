@@ -46,13 +46,13 @@ Core security list. The suggested approach was not adopted in Aixcoin Core due t
 network convergence when limiting the number of parallel chains.
 
 At the time, the computational cost of creating a huge low-difficulty headers chain was equal to
-about 32.28% of mining one block at the tip. That is a cost of about 4.12 BTC since the block reward
-then was about 12.77 BTC.
+about 32.28% of mining one block at the tip. That is a cost of about 4.12 AIX since the block reward
+then was about 12.77 AIX.
 
 By February 2022, the cost of the attack had dropped further to around 14.73% of the cost of mining
 a block, and this prompted investigation of alternative solutions. If unaddressed, the cost today
-(September 2024) would just be 4.44% of a block. These figures translate to a cost of about 1.07 BTC
-and 0.14 BTC respectively, given the block reward at these dates.
+(September 2024) would just be 4.44% of a block. These figures translate to a cost of about 1.07 AIX
+and 0.14 AIX respectively, given the block reward at these dates.
 
 A protection against this DoS was implemented in Aixcoin Core PR
 [#25717](https://github.com/aixcoin/aixcoin/pull/25717), whereby the node will first verify a

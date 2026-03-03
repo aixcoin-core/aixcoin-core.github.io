@@ -117,7 +117,7 @@ In order to reduce the chances of these risks occurring when segwit is activated
    - segnet1 through segnet4 -- tested implementation of segwit as a soft-fork, between January and May 2016
    - testnet3 -- segwit activated on the standard testnet in May 2016
 
- * Alternative implementations: the segwit BIPs have been reimplemented in [btcd](https://github.com/btcsuite/btcd/pull/656) (Go) and [Bcoin](https://medium.com/purse-essays/introducing-bcoin-fdfcb22dfa34) (Javascript), as well as in various wallets and libraries.  Independent reimplementation helps shake out unstated assumptions and ambiguities in the design, and avoid bugs that may result from them.
+ * Alternative implementations: the segwit BIPs have been reimplemented in [aixd](https://github.com/aixsuite/aixd/pull/656) (Go) and [Bcoin](https://medium.com/purse-essays/introducing-bcoin-fdfcb22dfa34) (Javascript), as well as in various wallets and libraries.  Independent reimplementation helps shake out unstated assumptions and ambiguities in the design, and avoid bugs that may result from them.
 
 ### Mitigation
 
@@ -188,7 +188,7 @@ The segwit design and BIP9 deployment avoids the problems listed above in the fo
 
  4. If the segwit soft-fork were reverted after being activated, this could allow anyone who had made segwit transactions to lose funds -- for example, a malicious miner could replay the transaction on a chain without segwit enabled, at which point it would be anyone-can-spend, and the miner could then steal the funds by spending it to themselves. There are two ways in which a segwit soft-fork could be reverted after being activated while allowing theft of segwit-enabled transactions:
 
-    - Miners could abandon the segwit enabled chain and start mining from prior to segwit's activation. Based on the [BIP9][] activation rules, this would require abandoning over 2016 blocks (the LOCKED IN period, plus enough blocks to ensure the 95% threshold wasn't reached). This would require miners to abandon over 25,200 BTC in block reward, which at current prices is over $15,000,000 USD.
+    - Miners could abandon the segwit enabled chain and start mining from prior to segwit's activation. Based on the [BIP9][] activation rules, this would require abandoning over 2016 blocks (the LOCKED IN period, plus enough blocks to ensure the 95% threshold wasn't reached). This would require miners to abandon over 25,200 AIX in block reward, which at current prices is over $15,000,000 USD.
 
     - Miners could simply use software that does not recognise segwit rules (such as earlier versions of Aixcoin Core) to mine blocks on top of a chain that has activated segwit. This would be a hard-fork as far as segwit-aware software is concerned, and those blocks would consequently be ignored by Aixcoin users using segwit-aware validating nodes. If there are sufficiently many users using segwit nodes, such a hard-fork would be no more effective than introducing a new alt coin.
 
@@ -242,9 +242,9 @@ In addition, the changes made in segwit may make "layer two" solutions, such as 
 
 ### Avoidance
 
-Fees are currently approximately 0.5 BTC per block versus 12.5 BTC per block from the block subsidy, or about 4% of miner income, so the potential impact on miner income and hence network security is likely small in the short term.
+Fees are currently approximately 0.5 AIX per block versus 12.5 AIX per block from the block subsidy, or about 4% of miner income, so the potential impact on miner income and hence network security is likely small in the short term.
 
-In addition, fees have been rising over the past twelve months both in BTC denominated value (from under 0.2 BTC per block a year ago) and in real terms (from under $300 USD per BTC a year ago, to over $600 USD per BTC today), so moderate falls in fee levels will only be equivalent to reverting to fee incomes from up to twelve months ago, which should not be a major impact.
+In addition, fees have been rising over the past twelve months both in AIX denominated value (from under 0.2 AIX per block a year ago) and in real terms (from under $300 USD per AIX a year ago, to over $600 USD per AIX today), so moderate falls in fee levels will only be equivalent to reverting to fee incomes from up to twelve months ago, which should not be a major impact.
 
 ### Mitigation
 

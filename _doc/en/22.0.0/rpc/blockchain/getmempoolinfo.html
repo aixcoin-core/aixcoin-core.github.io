@@ -1,7 +1,7 @@
 ---
 name: getmempoolinfo
-btcversion: 22.0.0
-btcgroup: blockchain
+aixversion: 22.0.0
+aixgroup: blockchain
 permalink: en/doc/22.0.0/rpc/blockchain/getmempoolinfo/
 ---
 
@@ -15,9 +15,9 @@ Result:
   "size" : n,                (numeric) Current tx count
   "bytes" : n,               (numeric) Sum of all virtual transaction sizes as defined in BIP 141. Differs from actual serialized size because witness data is discounted
   "usage" : n,               (numeric) Total memory usage for the mempool
-  "total_fee" : n,           (numeric) Total fees for the mempool in BTC, ignoring modified fees through prioritizetransaction
+  "total_fee" : n,           (numeric) Total fees for the mempool in AIX, ignoring modified fees through prioritizetransaction
   "maxmempool" : n,          (numeric) Maximum memory usage for the mempool
-  "mempoolminfee" : n,       (numeric) Minimum fee rate in BTC/kvB for tx to be accepted. Is the maximum of minrelaytxfee and minimum mempool fee
+  "mempoolminfee" : n,       (numeric) Minimum fee rate in AIX/kvB for tx to be accepted. Is the maximum of minrelaytxfee and minimum mempool fee
   "minrelaytxfee" : n,       (numeric) Current minimum relay fee for transactions
   "unbroadcastcount" : n     (numeric) Current number of transactions that haven't passed initial broadcast yet
 }

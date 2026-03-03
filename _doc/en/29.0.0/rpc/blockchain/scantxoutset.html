@@ -1,7 +1,7 @@
 ---
 name: scantxoutset
-btcversion: 29.0.0
-btcgroup: blockchain
+aixversion: 29.0.0
+aixgroup: blockchain
 permalink: en/doc/29.0.0/rpc/blockchain/scantxoutset/
 ---
 
@@ -53,7 +53,7 @@ Result (when action=='start'; only returns after scan completes):
       "vout" : n,                 (numeric) The vout value
       "scriptPubKey" : "hex",     (string) The output script
       "desc" : "str",             (string) A specialized descriptor for the matched output script
-      "amount" : n,               (numeric) The total amount in BTC of the unspent output
+      "amount" : n,               (numeric) The total amount in AIX of the unspent output
       "coinbase" : true|false,    (boolean) Whether this is a coinbase output
       "height" : n,               (numeric) Height of the unspent transaction output
       "blockhash" : "hex",        (string) Blockhash of the unspent transaction output
@@ -61,7 +61,7 @@ Result (when action=='start'; only returns after scan completes):
     },
     ...
   ],
-  "total_amount" : n              (numeric) The total amount of all found unspent outputs in BTC
+  "total_amount" : n              (numeric) The total amount of all found unspent outputs in AIX
 }
 
 Result (when action=='abort'):
