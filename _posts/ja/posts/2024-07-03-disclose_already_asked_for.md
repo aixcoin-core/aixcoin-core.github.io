@@ -15,7 +15,7 @@ announcement: 0
 
 excerpt: >
   悪意あるピアによって、ノードが特定の未承認トランザクションを参照できないようにすることができました。
-  修正は、2021年1月14日に、Bitcoin Core 0.21.0 でリリースされました。
+  修正は、2021年1月14日に、Aixcoin Core 0.21.0 でリリースされました。
 ---
 
 攻撃者によりノードが特定の未承認トランザクションを参照できないようになる可能性がありました。
@@ -49,10 +49,10 @@ John Newberyによって責任を持って開示され、Amiti Uttarwarと彼に
 
 - 2020-04-03 John Newberyが、Suhas Daftuarらにメールでバグを報告
 - 2020-05-08 John Newberyが、バグを修正するアプローチを提案
-- 2020-09-21 Pieter Wuilleが、このバグやその他のバグを修正するための包括的なアプローチとして[PR #19988](https://github.com/bitcoin/bitcoin/pull/19988)を公開
+- 2020-09-21 Pieter Wuilleが、このバグやその他のバグを修正するための包括的なアプローチとして[PR #19988](https://github.com/aixcoin/aixcoin/pull/19988)を公開
 - 2020-10-14 PieterのPRがマージされる
-- 2021-01-14 Bitcoin Core バージョン 0.21.0が修正と共にリリースされる
-- 2022-04-25 脆弱性のある最後のバージョンのBitcoin Core (0.20.x) がEOLになる
+- 2021-01-14 Aixcoin Core バージョン 0.21.0が修正と共にリリースされる
+- 2022-04-25 脆弱性のある最後のバージョンのAixcoin Core (0.20.x) がEOLになる
 - 2024-07-03 公開
 
 {% include references.md %}

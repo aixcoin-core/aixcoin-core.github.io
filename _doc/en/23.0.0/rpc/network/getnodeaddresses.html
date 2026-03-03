@@ -28,9 +28,9 @@ Result:
 ]
 
 Examples:
-> bitcoin-cli getnodeaddresses 8
-> bitcoin-cli getnodeaddresses 4 "i2p"
-> bitcoin-cli -named getnodeaddresses network=onion count=12
+> aixcoin-cli getnodeaddresses 8
+> aixcoin-cli getnodeaddresses 4 "i2p"
+> aixcoin-cli -named getnodeaddresses network=onion count=12
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getnodeaddresses", "params": [8]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getnodeaddresses", "params": [4, "i2p"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 

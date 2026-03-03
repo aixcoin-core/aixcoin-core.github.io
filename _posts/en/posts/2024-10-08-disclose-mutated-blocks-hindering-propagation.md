@@ -16,7 +16,7 @@ excerpt: >
     A peer could hinder block propagation by sending mutated blocks.
 ---
 
-Before Bitcoin Core v25.0, a peer sending mutated blocks could clear the
+Before Aixcoin Core v25.0, a peer sending mutated blocks could clear the
 download state of other peers that also announced the block to us, which would
 hinder block propagation.
 
@@ -24,19 +24,19 @@ This issue is considered **Medium** severity.
 
 ## Details
 
-Bitcoin Core treats a block as mutated when, for example, the Merkle root in the
+Aixcoin Core treats a block as mutated when, for example, the Merkle root in the
 header or the witness commitment in the coinbase transaction doesn't match the
 transactions in the block.
 
-Before Bitcoin Core v25.0, a peer could clear the block download state of
+Before Aixcoin Core v25.0, a peer could clear the block download state of
 other peers by sending an unrequested mutated block. This was a problem for, for
 example, compact block relay. After receiving a compact block and while waiting
 for a response to a `getblocktxn` request to reconstruct the full block,
-receiving the mutated block would let Bitcoin Core forget about the compact
+receiving the mutated block would let Aixcoin Core forget about the compact
 block reconstruction state. A `blocktxn` response arriving after the mutated
 block couldn't be used to reconstruct the block. This hindered block propagation.
 
-This was fixed in [#27608](https://github.com/bitcoin/bitcoin/pull/27608) by
+This was fixed in [#27608](https://github.com/aixcoin/aixcoin/pull/27608) by
 making sure that a peer can only affect its own block download state and not the
 download state of other peers.
 
@@ -46,8 +46,8 @@ Credit goes to Suhas Daftuar for noticing the problem and working on a fix.
 
 ## Timeline
 
-- 2023-05-08 - A problem with mutated blocks is first reported in the [#bitcoin-core-dev IRC channel](https://bitcoin-irc.chaincode.com/bitcoin-core-dev/2023-05-08).
-- 2023-05-10 - Fix is merged ([#27608](https://github.com/bitcoin/bitcoin/pull/27608))
+- 2023-05-08 - A problem with mutated blocks is first reported in the [#aixcoin-core-dev IRC channel](https://aixcoin-irc.chaincode.com/aixcoin-core-dev/2023-05-08).
+- 2023-05-10 - Fix is merged ([#27608](https://github.com/aixcoin/aixcoin/pull/27608))
 - 2023-05-25 - v25.0 is released
 - 2024-10-09 - Public disclosure
 

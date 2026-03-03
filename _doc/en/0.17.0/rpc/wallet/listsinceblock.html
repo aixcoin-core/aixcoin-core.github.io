@@ -21,8 +21,8 @@ Arguments:
 Result:
 {
   "transactions": [
-    "account":"accountname",       (string) DEPRECATED. This field will be removed in V0.18. To see this deprecated field, start bitcoind with -deprecatedrpc=accounts. The account name associated with the transaction. Will be "" for the default account.
-    "address":"address",    (string) The bitcoin address of the transaction. Not present for move transactions (category = move).
+    "account":"accountname",       (string) DEPRECATED. This field will be removed in V0.18. To see this deprecated field, start aixcoind with -deprecatedrpc=accounts. The account name associated with the transaction. Will be "" for the default account.
+    "address":"address",    (string) The aixcoin address of the transaction. Not present for move transactions (category = move).
     "category":"send|receive",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.
     "amount": x.xxx,          (numeric) The amount in BTC. This is negative for the 'send' category, and for the 'move' category for moves 
                                           outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.
@@ -51,8 +51,8 @@ Result:
 }
 
 Examples:
-> bitcoin-cli listsinceblock 
-> bitcoin-cli listsinceblock "000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad" 6
+> aixcoin-cli listsinceblock 
+> aixcoin-cli listsinceblock "000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad" 6
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listsinceblock", "params": ["000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

@@ -29,7 +29,7 @@ Arguments:
                                       accepted as second parameter.
      [
        {                              (json object)
-         "address": amount,           (numeric or string, required) A key-value pair. The key (string) is the bitcoin address, the value (float or string) is the amount in BTC
+         "address": amount,           (numeric or string, required) A key-value pair. The key (string) is the aixcoin address, the value (float or string) is the amount in BTC
          ...
        },
        {                              (json object)
@@ -45,7 +45,7 @@ Arguments:
        "include_unsafe": bool,        (boolean, optional, default=false) Include inputs that are not safe to spend (unconfirmed transactions from outside keys and unconfirmed replacement transactions).
                                       Warning: the resulting transaction may become invalid if one of the unsafe inputs disappears.
                                       If that happens, you will need to fund the transaction with different inputs and republish it.
-       "changeAddress": "str",        (string, optional, default=automatic) The bitcoin address to receive the change
+       "changeAddress": "str",        (string, optional, default=automatic) The aixcoin address to receive the change
        "changePosition": n,           (numeric, optional, default=random) The index of the change output
        "change_type": "str",          (string, optional, default=set by -changetype) The output type to use. Only valid if changeAddress is not specified. Options are "legacy", "p2sh-segwit", "bech32", and "bech32m".
        "includeWatching": bool,       (boolean, optional, default=true for watch-only wallets, otherwise false) Also select inputs which are watch only
@@ -54,7 +54,7 @@ Arguments:
        "feeRate": amount,             (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in BTC/kvB.
        "subtractFeeFromOutputs": [    (json array, optional, default=[]) The outputs to subtract the fee from.
                                       The fee will be equally deducted from the amount of each specified output.
-                                      Those recipients will receive less bitcoins than you enter in their corresponding amount field.
+                                      Those recipients will receive less aixcoins than you enter in their corresponding amount field.
                                       If no outputs are specified here, the sender pays the fee.
          vout_index,                  (numeric) The zero-based output index, before a change output is added.
          ...
@@ -94,6 +94,6 @@ Result:
 Examples:
 
 Create a transaction with no inputs
-> bitcoin-cli walletcreatefundedpsbt "[{\"txid\":\"myid\",\"vout\":0}]" "[{\"data\":\"00010203\"}]"
+> aixcoin-cli walletcreatefundedpsbt "[{\"txid\":\"myid\",\"vout\":0}]" "[{\"data\":\"00010203\"}]"
 
 

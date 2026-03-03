@@ -15,17 +15,17 @@ announcement: 0
 
 excerpt: >
   攻撃者は、blocktxnメッセージ処理ロジックのアサーションのトリガーすることで、
-  Bitcoin Coreノードをリモートでクラッシュさせる可能性がありました。
+  Aixcoin Coreノードをリモートでクラッシュさせる可能性がありました。
 ---
 
-Bitcoin Core v25.0より前のバージョンでは、攻撃者はblocktxnメッセージ処理ロジックのアサーションをトリガーすることで、
-Bitcoin Coreノードをリモートでクラッシュさせることができました。
+Aixcoin Core v25.0より前のバージョンでは、攻撃者はblocktxnメッセージ処理ロジックのアサーションをトリガーすることで、
+Aixcoin Coreノードをリモートでクラッシュさせることができました。
 
 この問題の重大度は**高**です。
 
 ## 詳細 {#details}
 
-cmpctblockメッセージを介してブロックの通知を受信した際、Bitcoin Coreは、
+cmpctblockメッセージを介してブロックの通知を受信した際、Aixcoin Coreは、
 自身のmempool内のトランザクションと、その他の利用可能なトランザクションを使用して、
 通知されたブロックを再構築しようとします。トランザクションの欠如により再構築が失敗した場合は、
 通知ピアに対してgetblocktxnメッセージでトランザクションを要求します。
@@ -39,7 +39,7 @@ cmpctblockメッセージを介してブロックの通知を受信した際、B
 衝突は不意に発生する可能性があるため、ピアは罰せされるべきではなく、
 衝突は完全なブロックを要求するようにフォールバックすることで処理されます。
 
-Bitcoin Coreは、新しいコンパクトブロックを受信するたびに、
+Aixcoin Coreは、新しいコンパクトブロックを受信するたびに、
 <code>PartiallyDownloadedBlock</code>のインスタンスを作成します。
 欠如しているトランザクションを要求すると、このインスタンスは対応するblocktxnメッセージが処理されるまで保持されます。
 blocktxnメッセージを受信すると、<code>PartiallyDownloadedBlock::FillBlock</code>が呼び出され、
@@ -56,14 +56,14 @@ blocktxnメッセージを受信すると、<code>PartiallyDownloadedBlock::Fill
 
 ## 貢献 {#attribution}
 
-この脆弱性を発見、開示し、[#26898](https://github.com/bitcoin/bitcoin/pull/26898) で問題を修正した
+この脆弱性を発見、開示し、[#26898](https://github.com/aixcoin/aixcoin/pull/26898) で問題を修正した
 Niklas Göggeに感謝します。
 
 ## タイムライン {#timeline}
 
-* 2022-10-05 - Niklas GöggeがBitcoin Coreのセキュリティメーリングリストに問題を報告
+* 2022-10-05 - Niklas GöggeがAixcoin Coreのセキュリティメーリングリストに問題を報告
 * 2023-01-24 - 修正が含まれたPR #26898がマージされる
-* 2023-05-25 - Bitcoin Core 25.0が修正と共にリリースされる
+* 2023-05-25 - Aixcoin Core 25.0が修正と共にリリースされる
 * 2024-10-09 - 公開
 
 {% include references.md %}

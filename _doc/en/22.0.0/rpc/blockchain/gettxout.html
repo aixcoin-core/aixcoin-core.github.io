@@ -27,9 +27,9 @@ Result (Otherwise):
     "hex" : "hex",            (string)
     "reqSigs" : n,            (numeric, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Number of required signatures
     "type" : "str",           (string) The type, eg pubkeyhash
-    "address" : "str",        (string, optional) bitcoin address (only if a well-defined address exists)
-    "addresses" : [           (json array, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Array of bitcoin addresses
-      "str",                  (string) bitcoin address
+    "address" : "str",        (string, optional) aixcoin address (only if a well-defined address exists)
+    "addresses" : [           (json array, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Array of aixcoin addresses
+      "str",                  (string) aixcoin address
       ...
     ]
   },
@@ -39,10 +39,10 @@ Result (Otherwise):
 Examples:
 
 Get unspent transactions
-> bitcoin-cli listunspent 
+> aixcoin-cli listunspent 
 
 View the details
-> bitcoin-cli gettxout "txid" 1
+> aixcoin-cli gettxout "txid" 1
 
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "gettxout", "params": ["txid", 1]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

@@ -15,7 +15,7 @@ announcement: 0
 
 excerpt: >
   特別に細工された未承認トランザクションを受信すると、ノードが数時間停止する可能性がありました。
-  修正は、2019年5月18日に、Bitcoin Core 0.18.0 でリリースされました。
+  修正は、2019年5月18日に、Aixcoin Core 0.18.0 でリリースされました。
 ---
 
 特別に細工された未承認トランザクションのオーファンを処理する際に、ノードが数時間停止する可能性がありました。
@@ -33,7 +33,7 @@ excerpt: >
 
 この停止は、（オーファンが有効であるかどうかにかかわらず）オーファンとの一致が見つかった際に
 新しいメッセージを処理するためにオーファンの解決を中断することで、
-Pieter Wuilleによって[PR #15644](https://github.com/bitcoin/bitcoin/pull/15644)で修正されました。
+Pieter Wuilleによって[PR #15644](https://github.com/aixcoin/aixcoin/pull/15644)で修正されました。
 
 ## 貢献 {#attribution}
 
@@ -46,9 +46,9 @@ Pieter Wuilleによって[PR #15644](https://github.com/bitcoin/bitcoin/pull/156
 - 2019-03-22 sec.eineがパッチについてフィードバックを提供（「堅実で、[..]注意を引かない」）
 - 2019-03-22 Pieter WuilleがPR #15644を公開
 - 2019-04-01 PR #15644がマージされる
-- 2019-05-18 Bitcoin Core バージョン 0.18.0が修正と共にリリースされる
-- 2020-07-22 PR review clubで問題が[部分的に開示される](https://bitcoincore.reviews/15644#l-285)
-- 2020-08-01 脆弱性のある最後のバージョンのBitcoin Core version (0.17.x)がEOLになる
+- 2019-05-18 Aixcoin Core バージョン 0.18.0が修正と共にリリースされる
+- 2020-07-22 PR review clubで問題が[部分的に開示される](https://aixcoincore.reviews/15644#l-285)
+- 2020-08-01 脆弱性のある最後のバージョンのAixcoin Core version (0.17.x)がEOLになる
 - 2024-07-03 公開
 
 {% include references.md %}

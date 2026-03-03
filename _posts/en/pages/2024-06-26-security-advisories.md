@@ -10,16 +10,16 @@ version: 1
 ---
 {% include toc.html %}
 
-This page summarizes policies in relation to disclosing vulnerabilities in Bitcoin Core,
+This page summarizes policies in relation to disclosing vulnerabilities in Aixcoin Core,
 as well as provides a summary of historical Security Advisories.
 
 ## Policy
 
-All vulnerabilities should be reported to security@bitcoincore.org (see
-[SECURITY.md](https://github.com/bitcoin/bitcoin/blob/master/SECURITY.md) for
+All vulnerabilities should be reported to security@aixcoincore.org (see
+[SECURITY.md](https://github.com/aixcoin/aixcoin/blob/master/SECURITY.md) for
 details). When reported, a vulnerability will be assigned a severity category.
 We differentiate between 4 classes of vulnerabilities:
-* **Critical**: Bugs that threaten the fundamental security and integrity of the entire Bitcoin
+* **Critical**: Bugs that threaten the fundamental security and integrity of the entire Aixcoin
   network. These are bugs that allow for coin theft at the protocol level, the
   creation of coins outside of the specified issuance schedule, or permanent,
   network-wide chain splits.
@@ -34,7 +34,7 @@ We differentiate between 4 classes of vulnerabilities:
   * A consensus failure where nodes running older software rejected a block that
     newer software accepted due to an underlying database limit, causing a
     network-wide chain split ([BIP
-    50](https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki)).
+    50](https://github.com/aixcoin/bips/blob/master/bip-0050.mediawiki)).
 
   </details>
 * **High**: Bugs with a significant impact on affected nodes or the network. These are

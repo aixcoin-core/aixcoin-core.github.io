@@ -13,7 +13,7 @@ version: 2
 announcement: 1
 
 excerpt: >
-  Nodes could be prevented from seeing specific unconfirmed transactions by a malicious peer. A fix was released on January 14th, 2021 in Bitcoin Core 0.21.0.
+  Nodes could be prevented from seeing specific unconfirmed transactions by a malicious peer. A fix was released on January 14th, 2021 in Aixcoin Core 0.21.0.
 ---
 
 An attacker could prevent a node from seeing a specific unconfirmed transaction.
@@ -42,10 +42,10 @@ Responsibly disclosed by John Newbery, claiming discovery by Amiti Uttarwar and 
 
 - 2020-04-03 John Newbery reports the bug in an email to Suhas Daftuar and others
 - 2020-05-08 John Newbery suggests an approach to fixing the bug
-- 2020-09-21 Pieter Wuille opens [PR #19988](https://github.com/bitcoin/bitcoin/pull/19988) as a comprehensive approach to fixing this and other bugs
+- 2020-09-21 Pieter Wuille opens [PR #19988](https://github.com/aixcoin/aixcoin/pull/19988) as a comprehensive approach to fixing this and other bugs
 - 2020-10-14 Pieter's PR is merged
-- 2021-01-14 Bitcoin Core version 0.21.0 is released with a fix
-- 2022-04-25 The last vulnerable Bitcoin Core version (0.20.x) goes EOL
+- 2021-01-14 Aixcoin Core version 0.21.0 is released with a fix
+- 2022-04-25 The last vulnerable Aixcoin Core version (0.20.x) goes EOL
 - 2024-07-03 Public disclosure
 
 {% include references.md %}

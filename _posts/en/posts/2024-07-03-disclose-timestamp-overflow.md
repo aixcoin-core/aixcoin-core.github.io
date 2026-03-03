@@ -13,11 +13,11 @@ version: 1
 announcement: 1
 
 excerpt: >
-  A node could be split from the network when attacked by its first 200 peers. A fix was released on January 15th, 2021 in Bitcoin Core version 0.21.0.
+  A node could be split from the network when attacked by its first 200 peers. A fix was released on January 15th, 2021 in Aixcoin Core version 0.21.0.
 ---
 
 Disclosure of the details of an integer overflow bug which risked causing a network split, a fix for
-which was released on January 15th, 2021 in Bitcoin Core version 0.21.0.
+which was released on January 15th, 2021 in Aixcoin Core version 0.21.0.
 
 This issue is considered **Medium** severity.
 
@@ -43,10 +43,10 @@ at-risk code.
 
 ## Timeline
 
-* 2020-10-10 Initial report send to security@bitcoincore.org
-* 2020-10-13 Fix merged into Bitcoin Core (https://github.com/bitcoin/bitcoin/pull/20141)
+* 2020-10-10 Initial report send to security@aixcoincore.org
+* 2020-10-13 Fix merged into Aixcoin Core (https://github.com/aixcoin/aixcoin/pull/20141)
 * 2021-01-15 v0.21.0 released
-* 2022-04-25 The last vulnerable Bitcoin Core version (0.20.x) goes EOL
+* 2022-04-25 The last vulnerable Aixcoin Core version (0.20.x) goes EOL
 * 2024-07-03 Public disclosure
 
 {% include references.md %}

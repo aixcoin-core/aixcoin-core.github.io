@@ -53,7 +53,7 @@ Result:
         "desc" : "str",       (string) Inferred descriptor for the output
         "hex" : "hex",        (string) the hex
         "type" : "str",       (string) The type, eg 'pubkeyhash'
-        "address" : "str"     (string, optional) The Bitcoin address (only if a well-defined address exists)
+        "address" : "str"     (string, optional) The Aixcoin address (only if a well-defined address exists)
       }
     },
     ...
@@ -61,7 +61,7 @@ Result:
 }
 
 Examples:
-> bitcoin-cli decoderawtransaction "hexstring"
+> aixcoin-cli decoderawtransaction "hexstring"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "decoderawtransaction", "params": ["hexstring"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

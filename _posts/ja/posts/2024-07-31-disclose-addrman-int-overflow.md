@@ -15,11 +15,11 @@ announcement: 0
 
 excerpt: >
   ノードにaddrメッセージスパムが送信され、ノードをクラッシュさせるために使用される可能性がありました。
-  修正は、2021年9月14日に Bitcoin Core v22.0でリリースされました。
+  修正は、2021年9月14日に Aixcoin Core v22.0でリリースされました。
 ---
 
 アサーションクラッシュを引き起こす整数オーバーフローバグの詳細を公開しました。
-このバグの修正は、2021年9月14日に Bitcoin Core バージョン v22.0でリリースされました。
+このバグの修正は、2021年9月14日に Aixcoin Core バージョン v22.0でリリースされました。
 
 この問題の重大度は**高**です。
 
@@ -32,12 +32,12 @@ excerpt: >
 ## 貢献 {#attribution}
 
 Eugene Siegelによる脆弱性の発見と開示と、Pieter Wuilleによる以下の修正に感謝します。
-https://github.com/bitcoin/bitcoin/pull/22387
+https://github.com/aixcoin/aixcoin/pull/22387
 
 ## タイムライン {#timeline}
 
-* 2021-06-21 - Eugene Siegelによる最初のレポートがsecurity@bitcoincore.orgに送信される
-* 2021-07-19 - 修正がマージされる(https://github.com/bitcoin/bitcoin/pull/22387)
+* 2021-06-21 - Eugene Siegelによる最初のレポートがsecurity@aixcoincore.orgに送信される
+* 2021-07-19 - 修正がマージされる(https://github.com/aixcoin/aixcoin/pull/22387)
 * 2021-09-13 - v22.0がリリースされる
 * 2024-07-31 - 公開
 

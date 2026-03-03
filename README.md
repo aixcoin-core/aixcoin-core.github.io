@@ -1,12 +1,12 @@
 # [aixcoincore.org](https://aixcoincore.org)
 
-This repository is the source code of the Bitcoin Core project website built with Jekyll.
+This repository is the source code of the Aixcoin Core project website built with Jekyll.
 
 ## Directory structure
 
   - `_posts/<lang>/posts` for blog articles.
   - `_posts/<lang>/pages` for static pages.
-  - `_posts/<lang>/releases` for Bitcoin Core release notes
+  - `_posts/<lang>/releases` for Aixcoin Core release notes
 
 File names *must* be in the format `Y-m-d-title.md`, e.g. `2015-12-31-title.md`. File names can be translated.
 

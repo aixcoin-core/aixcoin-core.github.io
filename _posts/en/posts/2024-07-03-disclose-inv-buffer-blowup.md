@@ -13,7 +13,7 @@ version: 1
 announcement: 1
 
 excerpt: >
-  Nodes would allocate up to 50 MB of memory per attacker sending a malicious `INV` message. A fix was released on June 3rd, 2020 in Bitcoin Core 0.20.0.
+  Nodes would allocate up to 50 MB of memory per attacker sending a malicious `INV` message. A fix was released on June 3rd, 2020 in Aixcoin Core 0.20.0.
 ---
 
 A node could be forced to allocate a significant amount of memory upon receiving a specially crafted
@@ -29,7 +29,7 @@ in a single `ProcessMessages()` call. Each response contains a locator and is ar
 be put into the send buffer at once. The attacker could just refuse to receive data to prevent the
 50 MB buffer from draining.
 
-John Newbery opened [PR #18962](https://github.com/bitcoin/bitcoin/pull/18962) to fix this issue
+John Newbery opened [PR #18962](https://github.com/aixcoin/aixcoin/pull/18962) to fix this issue
 pretexting a bandwidth gain from sending a single `GETHEADERS` per received `INV`.
 
 ## Attribution
@@ -41,8 +41,8 @@ Credits to John Newbery for finding this bug, responsibly disclosing it and fixi
 - 2020-05-08 John Newbery reports his finding by email
 - 2020-05-12 John Newbery opens #18962
 - 2020-05-14 #18962 is merged
-- 2020-06-03 Bitcoin Core version 0.20.0 is released with a fix
-- 2021-09-13 The last vulnerable Bitcoin Core version (0.19.x) goes EOL
+- 2020-06-03 Aixcoin Core version 0.20.0 is released with a fix
+- 2021-09-13 The last vulnerable Aixcoin Core version (0.19.x) goes EOL
 - 2024-07-03 Public disclosure.
 
 {% include references.md %}

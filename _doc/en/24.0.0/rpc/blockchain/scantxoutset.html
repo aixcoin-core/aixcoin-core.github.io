@@ -69,9 +69,9 @@ Result (when action=='status' and no scan is in progress - possibly already comp
 null    (json null)
 
 Examples:
-> bitcoin-cli scantxoutset start '["raw(76a91411b366edfc0a8b66feebae5c2e25a7b6a5d1cf3188ac)#fm24fxxy"]'
-> bitcoin-cli scantxoutset status
-> bitcoin-cli scantxoutset abort
+> aixcoin-cli scantxoutset start '["raw(76a91411b366edfc0a8b66feebae5c2e25a7b6a5d1cf3188ac)#fm24fxxy"]'
+> aixcoin-cli scantxoutset status
+> aixcoin-cli scantxoutset abort
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "scantxoutset", "params": ["start", ["raw(76a91411b366edfc0a8b66feebae5c2e25a7b6a5d1cf3188ac)#fm24fxxy"]]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "scantxoutset", "params": ["status"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "scantxoutset", "params": ["abort"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

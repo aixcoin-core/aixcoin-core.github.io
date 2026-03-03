@@ -5,7 +5,7 @@
 ## commits using pattern matches
 
 ## Example (URL is the repository to link to):
-## {% githubify https://github.com/bitcoin/bitcoin %}
+## {% githubify https://github.com/aixcoin/aixcoin %}
 ## ...content...
 ## {% endgithubify %}
 
@@ -27,17 +27,17 @@ require 'yaml'
       ## If #1234 links to an issue, GitHub automatically redirects
       #
       ## Main repository; forbid any lowercase alphabetical prefix to avoid conflation with
-      ## other monotree repos like bitcoin-core/gui.  Require at least a
+      ## other monotree repos like aixcoin-core/gui.  Require at least a
       ## double-digit number to reduce false positive matches (e.g. "fix thing,
       ## try #2")
       output.gsub!(/(^|[^a-z])#([0-9][0-9]+)/){ |s|
         $1 + '<a href="' + @repository_url + '/pull/' + $2 + '">#' + $2 + '</a>'
       }
 
-      ## Other monotree repos; for repo "bitcoin-core/foo", PR format is "foo#123".
+      ## Other monotree repos; for repo "aixcoin-core/foo", PR format is "foo#123".
       ## Must start at word boundary
       output.gsub!(/\b([a-z]+)#([0-9]+)/){ |s|
-        '<a href="https://github.com/bitcoin-core/' + $1 + '/pull/' + $2 + '">' + s + '</a>'
+        '<a href="https://github.com/aixcoin-core/' + $1 + '/pull/' + $2 + '">' + s + '</a>'
       }
 
       ## Convert `123abcd` into URL for the commit

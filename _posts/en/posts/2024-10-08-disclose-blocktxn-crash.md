@@ -13,18 +13,18 @@ version: 1
 announcement: 1
 
 excerpt: >
-  An attacker could remotely crash a Bitcoin Core node by triggering an
+  An attacker could remotely crash a Aixcoin Core node by triggering an
   assertion in the blocktxn message handling logic.
 ---
 
-Before Bitcoin Core v25.0, an attacker could remotely crash Bitcoin Core
+Before Aixcoin Core v25.0, an attacker could remotely crash Aixcoin Core
 nodes by triggering an assertion in the blocktxn message handling logic.
 
 This issue is considered **High** severity.
 
 ## Details
 
-When receiving a block announcement via a cmpctblock message, Bitcoin Core
+When receiving a block announcement via a cmpctblock message, Aixcoin Core
 attempts to reconstruct the announced block using the transactions in its own
 mempool as well as other available transactions. If reconstruction fails due to
 missing transactions it will request them from the announcing peer via a
@@ -40,7 +40,7 @@ the block announcement. Peers should not be punished for collisions as they may
 happen spuriously, therefore they are handled by falling back to requesting the
 full block.
 
-Bitcoin Core will create an instance of <code>PartiallyDownloadedBlock</code>
+Aixcoin Core will create an instance of <code>PartiallyDownloadedBlock</code>
 whenever a new compact block is received. If missing transactions are
 requested, the instance is persisted until the corresponding blocktxn message
 is processed. Upon receiving the blocktxn message,
@@ -61,13 +61,13 @@ merkle root.
 ## Attribution
 
 Credit goes to Niklas Gögge for discovering and disclosing the vulnerability,
-as well as fixing the issue in https://github.com/bitcoin/bitcoin/pull/26898.
+as well as fixing the issue in https://github.com/aixcoin/aixcoin/pull/26898.
 
 ## Timeline
 
-* 2022-10-05 - Niklas Gögge reports the issue to the Bitcoin Core security mailing list.
+* 2022-10-05 - Niklas Gögge reports the issue to the Aixcoin Core security mailing list.
 * 2023-01-24 - PR #26898 containing the fix is merged.
-* 2023-05-25 - Bitcoin Core 25.0 is released with the fix.
+* 2023-05-25 - Aixcoin Core 25.0 is released with the fix.
 * 2024-10-09 - Public disclosure.
 
 {% include references.md %}

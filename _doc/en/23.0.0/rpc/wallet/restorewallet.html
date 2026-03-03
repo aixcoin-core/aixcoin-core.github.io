@@ -21,9 +21,9 @@ Result:
 }
 
 Examples:
-> bitcoin-cli restorewallet "testwallet" "home\backups\backup-file.bak"
+> aixcoin-cli restorewallet "testwallet" "home\backups\backup-file.bak"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "restorewallet", "params": ["testwallet" "home\backups\backup-file.bak"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-> bitcoin-cli -named restorewallet wallet_name=testwallet backup_file='home\backups\backup-file.bak"' load_on_startup=true
+> aixcoin-cli -named restorewallet wallet_name=testwallet backup_file='home\backups\backup-file.bak"' load_on_startup=true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "restorewallet", "params": {"wallet_name":"testwallet","backup_file":"home\\backups\\backup-file.bak\"","load_on_startup":true}}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

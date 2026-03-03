@@ -25,7 +25,7 @@ A wallet MUST implement all the features in this section, in order to be conside
 
 #### Creation of P2SH-P2WPKH Address
 
-* A P2SH-P2WPKH address is comparable to Bitcoin's original single-signature P2PKH address (address with prefix 1).
+* A P2SH-P2WPKH address is comparable to Aixcoin's original single-signature P2PKH address (address with prefix 1).
 * Like any other P2SH address, P2SH-P2WPKH address has prefix 3.
 * Until a P2SH-P2WPKH UTXO is spent and the <code>redeemScript</code> is exposed, a P2SH-P2WPKH address is indistinguishable from a non-segwit P2SH address (such as a non-segwit multi-signature address)
 * P2SH-P2WPKH addresses should be used when only 1 public key is used to receive payment (like P2PKH)
@@ -44,7 +44,7 @@ A wallet MUST implement all the features in this section, in order to be conside
     * The <code>flag</code> MUST be <code>0x01</code>
     * The <code>witness</code> is a serialization of all witness data of the transaction.
         * Each txin is associated with a witness field. As a result, there is no indication of number of witness fields, as it is implied by the number of <code>txins</code>
-        * Each witness field starts with a <code>compactSize</code> [integer](https://bitcoin.org/en/developer-reference#compactsize-unsigned-integers) to indicate the number of stack items for the corresponding <code>txin</code>. It is then followed by witness stack item(s) for the corresponding <code>txin</code>, if any. 
+        * Each witness field starts with a <code>compactSize</code> [integer](https://aixcoin.org/en/developer-reference#compactsize-unsigned-integers) to indicate the number of stack items for the corresponding <code>txin</code>. It is then followed by witness stack item(s) for the corresponding <code>txin</code>, if any. 
         * Each witness stack item starts with a <code>compactSize</code> integer to indicate the number of bytes of the item.
         * If a <code>txin</code> is not associated with any witness data, its corresponding witness field is an exact <code>0x00</code>, indicating that the number of witness stack items is zero.
 * If all <code>txins</code> in a transaction are not associated with any witness data, the transaction MUST be serialized in the original transaction format, without <code>marker</code>, <code>flag</code>, and <code>witness</code>. For example, if none of the <code>txins</code> are coming from segwit UTXO, it MUST be serialized in the original transaction format. (exception: coinbase transaction)
@@ -66,7 +66,7 @@ A wallet MUST implement all the features in this section, in order to be conside
 * For spending of P2SH-P2WPKH:
     * The <code>scriptSig</code> MUST ONLY contain a push of the <code>redeemScript</code>
     * The corresponding witness field MUST contain exactly 2 items, a signature followed by the public key
-    * There is a new signature generation algorithm described in [BIP143][] for segwit scripts. Developers should follow the instructions carefully, and make use of the P2SH-P2WPKH example in [BIP143](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki#P2SHP2WPKH) to make sure they are able to reproduce the <code>sighash</code>.
+    * There is a new signature generation algorithm described in [BIP143][] for segwit scripts. Developers should follow the instructions carefully, and make use of the P2SH-P2WPKH example in [BIP143](https://github.com/aixcoin/bips/blob/master/bip-0143.mediawiki#P2SHP2WPKH) to make sure they are able to reproduce the <code>sighash</code>.
     * The [BIP143][] signature generating algorithm covers the value of the input being spent, which simplifies the design of air-gapped light-weight wallets and hardware wallets.
     * Please note that for a P2SH-P2WPKH, the <code>scriptCode</code> is always 26 bytes including the leading size byte, as <code>0x1976a914{20-byte keyhash}88ac</code>, NOT the <code>redeemScript</code> nor <code>scriptPubKey</code>
     * [Example](https://blockchainprogramming.azurewebsites.net/checktx?txid=8139979112e894a14f8370438a471d23984061ff83a9eba0bc7a34433327ec21)
@@ -82,7 +82,7 @@ A wallet MUST implement all the features in this section, in order to be conside
 
 #### User Privacy
 
-* Until segwit transactions are commonplace, this transaction type may make Bitcoin tracking easier.
+* Until segwit transactions are commonplace, this transaction type may make Aixcoin tracking easier.
 * Using P2SH-P2WPKH as default change output may also have an impact on privacy.
 
 #### Transaction Fee Estimation
@@ -109,7 +109,7 @@ If a wallet supports script types other than just single signature, such as mult
 
 #### Creation of P2SH-P2WSH Address
 
-* A P2SH-P2WSH address is comparable to Bitcoin's original P2SH address, which allows representation of arbitrarily complex scripts with a fixed size address.
+* A P2SH-P2WSH address is comparable to Aixcoin's original P2SH address, which allows representation of arbitrarily complex scripts with a fixed size address.
 * Like any other P2SH and P2SH-P2WPKH address, P2SH-P2WSH address has prefix 3. They are indistinguishable until the UTXO is spent
 * To create a P2SH-P2WSH address:
     1. Define a script, called (<code>witnessScript</code>)
@@ -119,7 +119,7 @@ If a wallet supports script types other than just single signature, such as mult
 * Restrictions on the script
     * The script evaluation must not fail, and MUST leave one and only one TRUE stack item after evaluation. Otherwise, the evaluation is failed.
     * Any public key inside P2SH-P2WSH scripts MUST be compressed key, or fund may be lost permanently.
-    * If OP_IF or OP_NOTIF is used, it argument MUST be either an empty vector (for false) or <code>0x01</code> (for true). Use of other value may lead to permanent fund loss. ([BIP draft](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-August/013014.html))
+    * If OP_IF or OP_NOTIF is used, it argument MUST be either an empty vector (for false) or <code>0x01</code> (for true). Use of other value may lead to permanent fund loss. ([BIP draft](https://lists.linuxfoundation.org/pipermail/aixcoin-dev/2016-August/013014.html))
     * If an OP_CHECKSIG or OP_CHECKMULTISIG is returning a fail, all signature(s) must be empty vector(s). Otherwise, fund may be lost permanently. ([BIP146][])
     * There is a default policy limit for the <code>witnessScript</code> at 3600 bytes. Except the <code>witnessScript</code>, there could be at most 100 witness stack items, with at most 80 bytes each. Transactions excessing these limits may not be relayed nor included in a block
     * Many of the original scripts consensus limitations, such as 10000 bytes script size, 201 <code>nOpCount</code>, are still applied to P2SH-P2WSH
@@ -158,7 +158,7 @@ The following functions are not required for initial segwit support.
 #### Why and How to Use Native (Bech32) P2WPKH and P2WSH?
 
 * [BIP173][] proposes a checksummed base32 format (Bech32) for native P2WPKH and P2WSH addresses.
-* Support for Bech32 addresses was included in Bitcoin Core v0.16.0
+* Support for Bech32 addresses was included in Aixcoin Core v0.16.0
 * Comparing with the P2SH versions, the transaction <code>vsize</code> of native versions is smaller in most cases, and therefore less fee may be required
 * Native P2WPKH and P2WSH may be used with raw <code>scriptPubKey</code> protocols, such as the Payment Protocol (BIP70). However, it may affect the privacy of the payer and recipient (see below).
 * Native P2WPKH and P2WSH may be used as default change address, but this may allow other people to identify the change easily (see below)
@@ -171,6 +171,6 @@ The following functions are not required for initial segwit support.
 * [BIP141][]
 * [BIP143][]
 * [BIP173][]
-* [Script tests](https://github.com/bitcoin/bitcoin/blob/master/src/test/data/script_tests.json)
-* [Valid transaction tests](https://github.com/bitcoin/bitcoin/blob/master/src/test/data/tx_valid.json)
-* [Invalid transaction tests](https://github.com/bitcoin/bitcoin/blob/master/src/test/data/tx_invalid.json)
+* [Script tests](https://github.com/aixcoin/aixcoin/blob/master/src/test/data/script_tests.json)
+* [Valid transaction tests](https://github.com/aixcoin/aixcoin/blob/master/src/test/data/tx_valid.json)
+* [Invalid transaction tests](https://github.com/aixcoin/aixcoin/blob/master/src/test/data/tx_invalid.json)

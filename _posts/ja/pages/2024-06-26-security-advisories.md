@@ -10,16 +10,16 @@ version: 1
 ---
 {% include toc.html %}
 
-このページでは、Bitcoin Coreの脆弱性の開示に関するポリシーと、
+このページでは、Aixcoin Coreの脆弱性の開示に関するポリシーと、
 過去のセキュリティアドバイザリの概要を掲載しています。
 
 ## ポリシー {#policy}
 
-すべての脆弱性は、security@bitcoincore.org までご報告ください（詳細は、
-[SECURITY.md](https://github.com/bitcoin/bitcoin/blob/master/SECURITY.md)をご覧ください）。
+すべての脆弱性は、security@aixcoincore.org までご報告ください（詳細は、
+[SECURITY.md](https://github.com/aixcoin/aixcoin/blob/master/SECURITY.md)をご覧ください）。
 脆弱性が報告されると、重大度のカテゴリが割り当てられます。私たちは脆弱性を4つのクラスで区別します。
 
-* **クリティカル**: Bitcoinネットワーク全体の根本的なセキュリティと整合性を脅かすバグ。
+* **クリティカル**: Aixcoinネットワーク全体の根本的なセキュリティと整合性を脅かすバグ。
   プロトコルレベルでのコインの盗難や、指定された発行スケジュールから外れたコインの発行、
   あるいはネットワーク全体にわたる永続的なチェーン分割を可能にするバグです。
   <details markdown="1">
@@ -32,7 +32,7 @@ version: 1
     通貨供給量を増やすことができるバグ（[CVE-2018-17144](/ja/2018/09/20/notice/)）。
   * 旧ソフトウェアを実行しているノードが、基礎となるデータベースの制限により、
     新しいソフトウェアが受け入れたブロックを拒否し、ネットワーク全体のチェーン分割を引き起こすコンセンサス障害
-    （[BIP 50](https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki)）。
+    （[BIP 50](https://github.com/aixcoin/bips/blob/master/bip-0050.mediawiki)）。
 
   </details>
 * *高*:影響を受けるノードやネットワークに重大な影響を与えるバグ。デフォルトの設定で

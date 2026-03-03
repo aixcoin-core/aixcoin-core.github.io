@@ -16,10 +16,10 @@ Result:
 {                             (json object)
   "asm" : "str",              (string) Script public key
   "type" : "str",             (string) The output type (e.g. nonstandard, pubkey, pubkeyhash, scripthash, multisig, nulldata, witness_v0_scripthash, witness_v0_keyhash, witness_v1_taproot, witness_unknown)
-  "address" : "str",          (string, optional) bitcoin address (only if a well-defined address exists)
+  "address" : "str",          (string, optional) aixcoin address (only if a well-defined address exists)
   "reqSigs" : n,              (numeric, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Number of required signatures
-  "addresses" : [             (json array, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Array of bitcoin addresses
-    "str",                    (string) bitcoin address
+  "addresses" : [             (json array, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Array of aixcoin addresses
+    "str",                    (string) aixcoin address
     ...
   ],
   "p2sh" : "str",             (string) address of P2SH script wrapping this redeem script (not returned if the script is already a P2SH)
@@ -27,9 +27,9 @@ Result:
     "asm" : "str",            (string) String representation of the script public key
     "hex" : "hex",            (string) Hex string of the script public key
     "type" : "str",           (string) The type of the script public key (e.g. witness_v0_keyhash or witness_v0_scripthash)
-    "address" : "str",        (string, optional) bitcoin address (only if a well-defined address exists)
+    "address" : "str",        (string, optional) aixcoin address (only if a well-defined address exists)
     "reqSigs" : n,            (numeric, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Number of required signatures
-    "addresses" : [           (json array, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Array of bitcoin addresses
+    "addresses" : [           (json array, optional) (DEPRECATED, returned only if config option -deprecatedrpc=addresses is passed) Array of aixcoin addresses
       "str",                  (string) segwit address
       ...
     ],
@@ -38,7 +38,7 @@ Result:
 }
 
 Examples:
-> bitcoin-cli decodescript "hexstring"
+> aixcoin-cli decodescript "hexstring"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "decodescript", "params": ["hexstring"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

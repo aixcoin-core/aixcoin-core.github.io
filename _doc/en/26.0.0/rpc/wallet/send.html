@@ -18,7 +18,7 @@ Arguments:
                                For convenience, a dictionary, which holds the key-value pairs directly, is also accepted.
      [
        {                       (json object)
-         "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the bitcoin address,
+         "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the aixcoin address,
                                the value (float or string) is the amount in BTC
          ...
        },
@@ -44,7 +44,7 @@ include_unsafe               (boolean, optional, default=false) Include inputs t
 minconf                      (numeric, optional, default=0) If add_inputs is specified, require inputs with at least this many confirmations.
 maxconf                      (numeric, optional) If add_inputs is specified, require inputs with at most this many confirmations.
 add_to_wallet                (boolean, optional, default=true) When false, returns a serialized transaction which will not be added to the wallet or broadcast
-change_address               (string, optional, default=automatic) The bitcoin address to receive the change
+change_address               (string, optional, default=automatic) The aixcoin address to receive the change
 change_position              (numeric, optional, default=random) The index of the change output
 change_type                  (string, optional, default=set by -changetype) The output type to use. Only valid if change_address is not specified. Options are "legacy", "p2sh-segwit", "bech32" and "bech32m".
 fee_rate                     (numeric or string, optional, default=not set, fall back to wallet fee estimation) Specify a fee rate in sat/vB.
@@ -64,7 +64,7 @@ lock_unspents                (boolean, optional, default=false) Lock selected un
 psbt                         (boolean, optional, default=automatic) Always return a PSBT, implies add_to_wallet=false.
 subtract_fee_from_outputs    (json array, optional, default=[]) Outputs to subtract the fee from, specified as integer indices.
                              The fee will be equally deducted from the amount of each specified output.
-                             Those recipients will receive less bitcoins than you enter in their corresponding amount field.
+                             Those recipients will receive less aixcoins than you enter in their corresponding amount field.
                              If no outputs are specified here, the sender pays the fee.
      [
        vout_index,           (numeric) The zero-based output index, before a change output is added.
@@ -105,18 +105,18 @@ Result:
 Examples:
 
 Send 0.1 BTC with a confirmation target of 6 blocks in economical fee estimate mode
-> bitcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.1}' 6 economical
+> aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.1}' 6 economical
 
 Send 0.2 BTC with a fee rate of 1.1 sat/vB using positional arguments
-> bitcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.2}' null "unset" 1.1
+> aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.2}' null "unset" 1.1
 
 Send 0.2 BTC with a fee rate of 1 sat/vB using the options argument
-> bitcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.2}' null "unset" null '{"fee_rate": 1}'
+> aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.2}' null "unset" null '{"fee_rate": 1}'
 
 Send 0.3 BTC with a fee rate of 25 sat/vB using named arguments
-> bitcoin-cli -named send outputs='{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.3}' fee_rate=25
+> aixcoin-cli -named send outputs='{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.3}' fee_rate=25
 
 Create a transaction that should confirm the next block, with a specific input, and return result without adding to wallet or broadcasting to the network
-> bitcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.1}' 1 economical '{"add_to_wallet": false, "inputs": [{"txid":"a08e6907dbbd3d809776dbfc5d82e371b764ed838b5655e72f463568df1aadf0", "vout":1}]}'
+> aixcoin-cli send '{"bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl": 0.1}' 1 economical '{"add_to_wallet": false, "inputs": [{"txid":"a08e6907dbbd3d809776dbfc5d82e371b764ed838b5655e72f463568df1aadf0", "vout":1}]}'
 
 

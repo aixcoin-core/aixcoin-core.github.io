@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Bitcoin Core
-url: https://bitcoincore.org
-transifex_url: https://www.transifex.com/bitcoincore/bitcoincoreorg
+title: Aixcoin Core
+url: https://aixcoincore.org
+transifex_url: https://www.transifex.com/aixcoincore/aixcoincoreorg
 
 # Jekyll configuration
 
@@ -24,8 +24,8 @@ kramdown:
 
 # Site owner
 owner:
-  name: Bitcoin Core
-  twitter: bitcoincoreorg
+  name: Aixcoin Core
+  twitter: aixcoincoreorg
 
 exclude:
   - _config.yml

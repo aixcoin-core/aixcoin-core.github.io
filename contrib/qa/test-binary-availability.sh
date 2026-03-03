@@ -1,7 +1,7 @@
 #!/bin/bash 
 
-# Local builds and CI builds of the BitcoinCore.org website do
-# not include the /bin directory holding Bitcoin Core binaries, so this
+# Local builds and CI builds of the AixcoinCore.org website do
+# not include the /bin directory holding Aixcoin Core binaries, so this
 # test extracts the local URLs from the download page and checks that
 # they exist on the remote server.  Only the file's HTTP headers are
 # downloaded, not the entire binaries.

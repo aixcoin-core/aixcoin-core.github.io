@@ -1,5 +1,5 @@
 ---
-title: bitcoincore.org Hidden Service
+title: aixcoincore.org Hidden Service
 name: hidden-service
 id: ja-hidden-service
 lang: ja

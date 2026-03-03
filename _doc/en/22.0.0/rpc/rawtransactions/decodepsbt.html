@@ -7,7 +7,7 @@ permalink: en/doc/22.0.0/rpc/rawtransactions/decodepsbt/
 
 decodepsbt "psbt"
 
-Return a JSON object representing the serialized, base64-encoded partially signed Bitcoin transaction.
+Return a JSON object representing the serialized, base64-encoded partially signed Aixcoin transaction.
 
 Arguments:
 1. psbt    (string, required) The PSBT base64 string
@@ -32,7 +32,7 @@ Result:
           "asm" : "str",                   (string) The asm
           "hex" : "hex",                   (string) The hex
           "type" : "str",                  (string) The type, eg 'pubkeyhash'
-          "address" : "str"                (string)  Bitcoin address if there is one
+          "address" : "str"                (string)  Aixcoin address if there is one
         }
       },
       "partial_signatures" : {             (json object, optional)
@@ -103,6 +103,6 @@ Result:
 }
 
 Examples:
-> bitcoin-cli decodepsbt "psbt"
+> aixcoin-cli decodepsbt "psbt"
 
 

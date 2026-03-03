@@ -15,11 +15,11 @@ announcement: 0
 
 excerpt: >
   最初の200個のピアによってノードが攻撃されると、ネットワークから切り離される可能性がありました。
-  修正は、2021年1月15日に、Bitcoin Core バージョン 0.21.0 でリリースされました。
+  修正は、2021年1月15日に、Aixcoin Core バージョン 0.21.0 でリリースされました。
 ---
 
 ネットワーク分割を引き起こす可能性のあった整数オーバーフローバグの詳細が開示され、
-その修正は、2021年1月15日にBitcoin Coreバージョン0.21.0でリリースされました。
+その修正は、2021年1月15日にAixcoin Coreバージョン0.21.0でリリースされました。
 
 この問題の重大度は**中**です。
 
@@ -43,10 +43,10 @@ excerpt: >
 
 ## タイムライン {#timeline}
 
-* 2020-10-10 最初の報告がsecurity@bitcoincore.orgに送信される
-* 2020-10-13 修正がBitcoin Coreにマージされる(https://github.com/bitcoin/bitcoin/pull/20141)
+* 2020-10-10 最初の報告がsecurity@aixcoincore.orgに送信される
+* 2020-10-13 修正がAixcoin Coreにマージされる(https://github.com/aixcoin/aixcoin/pull/20141)
 * 2021-01-15 v0.21.0がリリースされる
-* 2022-04-25 脆弱性のある最後のバージョンのBitcoin Core(0.20.x)がEOLになる
+* 2022-04-25 脆弱性のある最後のバージョンのAixcoin Core(0.20.x)がEOLになる
 * 2024-07-03 公開
 
 {% include references.md %}

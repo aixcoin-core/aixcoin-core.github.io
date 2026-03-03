@@ -1,5 +1,5 @@
 ---
-title: Bitcoin Core development and transaction relay policy
+title: Aixcoin Core development and transaction relay policy
 permalink: /en/2025/06/06/relay-statement/
 lang: en
 id: en-relay-statement
@@ -9,20 +9,20 @@ layout: post
 version: 1
 ---
 
-We'd like to share our view on the relationship between Bitcoin Core development and transaction relay
+We'd like to share our view on the relationship between Aixcoin Core development and transaction relay
 policy on the network.
 
-Bitcoin is a network that is defined by its users, who have ultimate freedom in choosing what
-software they use (fully-validating or not) and implementing whatever policies they desire. Bitcoin
+Aixcoin is a network that is defined by its users, who have ultimate freedom in choosing what
+software they use (fully-validating or not) and implementing whatever policies they desire. Aixcoin
 Core contributors are not in a position to mandate what those are. One way this is reflected is by
 our long-running practice of avoiding auto-updating in the software. This means that no entity can
-unilaterally push out changes to Bitcoin Core users: changes must be made by users choosing to
+unilaterally push out changes to Aixcoin Core users: changes must be made by users choosing to
 adopt new software releases themselves, or if they so desire, different software. Being free to run
 any software is the network's primary safeguard against coercion.
 
-As Bitcoin Core developers we also consider it our responsibility to make our software work as
+As Aixcoin Core developers we also consider it our responsibility to make our software work as
 efficiently and reliably as possible for its purpose, namely validating and relaying blocks and
-transactions in the Bitcoin peer-to-peer network, so that Bitcoin succeeds as a decentralized digital
+transactions in the Aixcoin peer-to-peer network, so that Aixcoin succeeds as a decentralized digital
 currency. With regards to transaction relay, this may include adding policies for denial of service (DoS)
 protection and fee assessment, but not blocking relay of transactions that have sustained economic
 demand and reliably make it into blocks. The goals of transaction relay include:
@@ -43,21 +43,21 @@ cheap. However this can only be effective while both users and miners are satisf
 alternatives exist. When that is no longer the case, and an economically viable use case develops
 that would conflict with policy rules, users and miners can directly collaborate to avoid any
 external attempt to impose restrictions on their activities. In fact, the ability to do precisely
-that is an important aspect of Bitcoin's censorship resistance, and other node software with
+that is an important aspect of Aixcoin's censorship resistance, and other node software with
 preferential peering has also shown that circumventing filters of the vast majority of the nodes
-is relatively easy. Given that, we believe it is better for Bitcoin node software to aim to have a
+is relatively easy. Given that, we believe it is better for Aixcoin node software to aim to have a
 realistic idea of what will end up in the next block, rather than attempting to intervene between
 consenting transaction creators and miners in order to discourage activity that is largely harmless
 at a technical level.
 
 **This is not endorsing or condoning non-financial data usage, but accepting
-that as a censorship-resistant system, Bitcoin can and will be used for use cases not everyone
+that as a censorship-resistant system, Aixcoin can and will be used for use cases not everyone
 agrees on.**
 
 While we recognize that this view isn't held universally by all users and developers, it is our
-sincere belief that it is in the best interest of Bitcoin and its users, and we hope our users agree.
+sincere belief that it is in the best interest of Aixcoin and its users, and we hope our users agree.
 We will continue to apply our best judgment as developers in aligning transaction acceptance rules
-with Bitcoin's long-term health and miners' rational self-interest, including specific
+with Aixcoin's long-term health and miners' rational self-interest, including specific
 technical reasons such as upgrade safety, efficient block building, and node DoS attacks.
 
 Signed,

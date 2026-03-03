@@ -27,7 +27,7 @@ Result (Otherwise):
     "desc" : "str",           (string) Inferred descriptor for the output
     "hex" : "hex",            (string)
     "type" : "str",           (string) The type, eg pubkeyhash
-    "address" : "str"         (string, optional) The Bitcoin address (only if a well-defined address exists)
+    "address" : "str"         (string, optional) The Aixcoin address (only if a well-defined address exists)
   },
   "coinbase" : true|false     (boolean) Coinbase or not
 }
@@ -35,10 +35,10 @@ Result (Otherwise):
 Examples:
 
 Get unspent transactions
-> bitcoin-cli listunspent 
+> aixcoin-cli listunspent 
 
 View the details
-> bitcoin-cli gettxout "txid" 1
+> aixcoin-cli gettxout "txid" 1
 
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "gettxout", "params": ["txid", 1]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/

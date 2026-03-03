@@ -63,7 +63,7 @@ Result (if verbose is set to true):
         "desc" : "str",              (string) Inferred descriptor for the output
         "hex" : "str",               (string) the hex
         "type" : "str",              (string) The type, eg 'pubkeyhash'
-        "address" : "str"            (string, optional) The Bitcoin address (only if a well-defined address exists)
+        "address" : "str"            (string, optional) The Aixcoin address (only if a well-defined address exists)
       }
     },
     ...
@@ -75,10 +75,10 @@ Result (if verbose is set to true):
 }
 
 Examples:
-> bitcoin-cli getrawtransaction "mytxid"
-> bitcoin-cli getrawtransaction "mytxid" true
+> aixcoin-cli getrawtransaction "mytxid"
+> aixcoin-cli getrawtransaction "mytxid" true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getrawtransaction", "params": ["mytxid", true]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-> bitcoin-cli getrawtransaction "mytxid" false "myblockhash"
-> bitcoin-cli getrawtransaction "mytxid" true "myblockhash"
+> aixcoin-cli getrawtransaction "mytxid" false "myblockhash"
+> aixcoin-cli getrawtransaction "mytxid" true "myblockhash"
 
 

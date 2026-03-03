@@ -16,7 +16,7 @@ excerpt: >
     The inv-to-send sets could grow too large to a point where the time spent sorting the sets would affect the node's ability to communicate with its peers.
 ---
 
-Before Bitcoin Core v25.0, the per-peer `m_tx_inventory_to_send` sets could grow
+Before Aixcoin Core v25.0, the per-peer `m_tx_inventory_to_send` sets could grow
 too large to a point where sorting these sets when constructing inventory
 messages would affect the node's ability to communicate with its peers. Network
 conditions in early May 2023 triggered this DoS and affected block and transaction
@@ -26,12 +26,12 @@ This issue is considered **Medium** severity.
 
 ## Details
 
-As part of transaction relay, Bitcoin Core maintains a per-peer
+As part of transaction relay, Aixcoin Core maintains a per-peer
 `m_tx_inventory_to_send` set with transactions that should be announced to the
 peer. When constructing an inventory message for a peer, the set is sorted by
 transaction dependencies and feerate to prioritize high-feerate transactions and
 to avoid leaking the order the node learned about the transactions. Before
-Bitcoin Core v25.0, when constructing inventory messages, relevant (still in
+Aixcoin Core v25.0, when constructing inventory messages, relevant (still in
 mempool, not yet announced to us by the peer, above the fee filter) transactions
 were being drained at a rate of 7 transactions per second.
 
@@ -45,7 +45,7 @@ took up nearly the complete time spent in the P2P communication thread, which
 significantly affected block and transaction propagation as well as keeping
 connection with peers alive.
 
-This was fixed in [#27610](https://github.com/bitcoin/bitcoin/pull/27610) by 1)
+This was fixed in [#27610](https://github.com/aixcoin/aixcoin/pull/27610) by 1)
 earlier removing transactions that aren't in the mempool anymore and 2) by
 dynamically increasing the set drainage rate depending on the set size.
 
@@ -57,7 +57,7 @@ reporting and narrowing the problem down to the slow inv-to-send sorting.
 ## Timeline
 
 - 2023-05-02 - Problem first observed and reported
-- 2023-05-11 - Fix is merged ([#27610](https://github.com/bitcoin/bitcoin/pull/27610))
+- 2023-05-11 - Fix is merged ([#27610](https://github.com/aixcoin/aixcoin/pull/27610))
 - 2023-05-25 - v25.0 is released
 - 2024-10-09 - Public disclosure
 

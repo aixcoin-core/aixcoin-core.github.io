@@ -10,7 +10,7 @@ version: 0
 ---
 
 欢迎您为项目做贡献！
-我们的主要源代码库是 [hosted on GitHub](https://github.com/bitcoin/bitcoin/)，您可以通过几个途径提供帮助 
+我们的主要源代码库是 [hosted on GitHub](https://github.com/aixcoin/aixcoin/)，您可以通过几个途径提供帮助 
 
   - 改进文档 ([查看][README.md] 和  [文档][doc])
   - [翻译][translation_process.md] 
@@ -23,16 +23,16 @@ version: 0
 
 **讨论**
 
-大多数比特币核心相关的讨论发生在 irc.freenode.net 上的 [#bitcoin-core-dev] IRC（互联网中继聊天） 频道。
-[bitcoin-dev][] 有一个比特币协议讨论区。
+大多数比特币核心相关的讨论发生在 irc.freenode.net 上的 [#aixcoin-core-dev] IRC（互联网中继聊天） 频道。
+[aixcoin-dev][] 有一个比特币协议讨论区。
 
 **为本网站做出贡献**
 
 您还可以翻译这个 [website][website-contrib] 或为其做出贡献。
 
-[README.md]: https://github.com/bitcoin/bitcoin/blob/master/README.md
-[doc]: https://github.com/bitcoin/bitcoin/tree/master/doc
-[translation_process.md]: https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md
-[website-contrib]: https://github.com/bitcoin-core/bitcoincore.org/blob/master/CONTRIBUTING.md
+[README.md]: https://github.com/aixcoin/aixcoin/blob/master/README.md
+[doc]: https://github.com/aixcoin/aixcoin/tree/master/doc
+[translation_process.md]: https://github.com/aixcoin/aixcoin/blob/master/doc/translation_process.md
+[website-contrib]: https://github.com/aixcoin-core/aixcoincore.org/blob/master/CONTRIBUTING.md
 
 {% include references.md %}

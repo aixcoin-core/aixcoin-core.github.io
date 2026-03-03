@@ -40,7 +40,7 @@ Result:
   "details" : [                            (json array)
     {                                      (json object)
       "involvesWatchonly" : true|false,    (boolean) Only returns true if imported addresses were involved in transaction.
-      "address" : "str",                   (string) The bitcoin address involved in the transaction.
+      "address" : "str",                   (string) The aixcoin address involved in the transaction.
       "category" : "str",                  (string) The transaction category.
                                            "send"                  Transactions sent.
                                            "receive"               Non-coinbase transactions received.
@@ -64,9 +64,9 @@ Result:
 }
 
 Examples:
-> bitcoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
-> bitcoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d" true
-> bitcoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d" false true
+> aixcoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
+> aixcoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d" true
+> aixcoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d" false true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "gettransaction", "params": ["1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

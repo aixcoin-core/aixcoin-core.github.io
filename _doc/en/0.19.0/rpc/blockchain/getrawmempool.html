@@ -24,7 +24,7 @@ Result: (for verbose = true):
 {                           (json object)
   "transactionid" : {       (json object)
     "vsize" : n,            (numeric) virtual transaction size as defined in BIP 141. This is different from actual serialized size for witness transactions as witness data is discounted.
-    "size" : n,             (numeric) (DEPRECATED) same as vsize. Only returned if bitcoind is started with -deprecatedrpc=size
+    "size" : n,             (numeric) (DEPRECATED) same as vsize. Only returned if aixcoind is started with -deprecatedrpc=size
                               size will be completely removed in v0.20.
     "weight" : n,           (numeric) transaction weight as defined in BIP 141.
     "fee" : n,              (numeric) transaction fee in BTC (DEPRECATED)
@@ -55,7 +55,7 @@ Result: (for verbose = true):
 }
 
 Examples:
-> bitcoin-cli getrawmempool true
+> aixcoin-cli getrawmempool true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getrawmempool", "params": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

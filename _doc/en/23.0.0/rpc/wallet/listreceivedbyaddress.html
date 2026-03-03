@@ -33,9 +33,9 @@ Result:
 ]
 
 Examples:
-> bitcoin-cli listreceivedbyaddress 
-> bitcoin-cli listreceivedbyaddress 6 true
-> bitcoin-cli listreceivedbyaddress 6 true true "" true
+> aixcoin-cli listreceivedbyaddress 
+> aixcoin-cli listreceivedbyaddress 6 true
+> aixcoin-cli listreceivedbyaddress 6 true true "" true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "listreceivedbyaddress", "params": [6, true, true]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "listreceivedbyaddress", "params": [6, true, true, "bc1q09vm5lfy0j5reeulh4x5752q25uqqvz34hufdl", true]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 

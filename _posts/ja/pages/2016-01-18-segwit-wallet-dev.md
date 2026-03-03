@@ -45,7 +45,7 @@ version: 1
     * <code>flag</code>は必ず<code>0x01</code>です。
     * <code>witness</code>はトランザクションの全witnessデータをシリアライズしたデータです。
         * 各txinはwitnessフィールドに関連付けられています。その結果、witnessフィールドの数を示すフィールドは無く、暗黙的に<code>txins</code>の数がその数を示します。
-        * 各witnessフィールドは対応する<code>txin</code>のスタックアイテムの数を示す<code>compactSize</code> [integer](https://bitcoin.org/en/developer-reference#compactsize-unsigned-integers) で始まります。その後に対応する<code>txin</code>のwitnessスタックアイテムが続きます。
+        * 各witnessフィールドは対応する<code>txin</code>のスタックアイテムの数を示す<code>compactSize</code> [integer](https://aixcoin.org/en/developer-reference#compactsize-unsigned-integers) で始まります。その後に対応する<code>txin</code>のwitnessスタックアイテムが続きます。
         * 各witnessスタックアイテムは、そのスタックアイテムのバイト数を示す<code>compactSize</code> integerで始まります。
         * <code>txin</code>がwitnessデータと関連付けられていない場合は、対応するwitnessフィールドの値は<code>0x00</code>となり、witnessスタックアイテムの数がゼロであることを示します。
 * トランザクション内の全ての<code>txins</code>がwitnessデータに関連付けられていない場合は、トランザクションは<code>marker</code>や<code>flag</code>、<code>witness</code>が無いオリジナルのトランザクションフォーマットでシリアライズされなければなりません。例えば、トランザクションの<code>txins</code>が全てsegwitのUTXOではない場合、そのトランザクションはオリジナルのトランザクションフォーマットでシリアライズされなければなりません。（コインベーストランザクションを除く）
@@ -67,7 +67,7 @@ version: 1
 * P2SH-P2WPKHのUTXOを使用する場合：
     * <code>scriptSig</code>には<code>redeemScript</code>しかプッシュしてはいけません。
     * 対応するwitnessフィールドには署名がプッシュされ、その次に公開鍵がプッシュされなければなりません。
-    * segwit scriptのための新しい署名生成アルゴリズムが[BIP143][]に定義されています。開発者は注意深くその指示に従い、[BIP143](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki#P2SHP2WPKH)のexampleを参考に<code>sighash</code>を再現できるか確認する必要があります。
+    * segwit scriptのための新しい署名生成アルゴリズムが[BIP143][]に定義されています。開発者は注意深くその指示に従い、[BIP143](https://github.com/aixcoin/bips/blob/master/bip-0143.mediawiki#P2SHP2WPKH)のexampleを参考に<code>sighash</code>を再現できるか確認する必要があります。
     * [BIP143][]の署名生成アルゴリズムは、使用される入力のコインの量をカバーしており、軽量ウォレットやハードウェアウォレットの設計のエアギャップを簡素化します。
     * P2SH-P2WPKHの場合、<code>scriptCode</code>は先頭のバイトを含めて常に26バイトで、<code>0x1976a914{20-byte keyhash}88ac</code>となります。<code>redeemScript</code>でも<code>scriptPubKey</code>でもないので注意してください。
     * [Example](https://blockchainprogramming.azurewebsites.net/checktx?txid=8139979112e894a14f8370438a471d23984061ff83a9eba0bc7a34433327ec21)
@@ -84,7 +84,7 @@ version: 1
 #### ユーザーのプライバシー {#user-privacy}
 
 * segwitがアクティベートされて数日は、ネットワーク内に流れるsegwitトランザクション数は限られたものでしょう。
-* その間segwitのトランザクションを使用するとBitcoinの追跡が容易になる場合があります。
+* その間segwitのトランザクションを使用するとAixcoinの追跡が容易になる場合があります。
 * デフォルトのお釣りの出力にP2SH-P2WPKHを使用すると、プライバシーに影響を与える可能性があります。
 
 #### トランザクション手数料の見積もり {#transaction-fee-estimation}
@@ -123,7 +123,7 @@ version: 1
 * スクリプトの制限事項
     * スクリプトの評価に失敗してはならず、評価後のスタックにはただ１つTRUEとなるスタックアイテムが残っている状態でないといけません。それ以外の場合、評価は失敗します。
     * P2SH-P2WSHスクリプト内の公開鍵は圧縮公開鍵でなければならず、それ以外の場合資金が永久に失われる可能性があります。
-    * OP_IFやOP_NOTIFが使われている場合、その引数は空のvector（false）か<code>0x01</code>（true）でなければなりません。他の値を使うと資金が永久に失われる可能性があります。 ([BIP draft](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-August/013014.html))
+    * OP_IFやOP_NOTIFが使われている場合、その引数は空のvector（false）か<code>0x01</code>（true）でなければなりません。他の値を使うと資金が永久に失われる可能性があります。 ([BIP draft](https://lists.linuxfoundation.org/pipermail/aixcoin-dev/2016-August/013014.html))
     * OP_CHECKSIGやOP_CHECKMULTISIGがfailを返す場合、全ての署名は空のvectorでなければなりません。それ以外の場合、資金が永久に失われる可能性があります。  ([BIP146][])
     * <code>witnessScript</code>のデフォルトポリシー制限は3600バイトです。<code>witnessScript</code>を除いて、witnessスタックアイテムは最大100個で、それぞれ最大で80バイトです。これらの制限を超えるトランザクションは中継されずブロックにも入れられません。
     * スクリプトサイズの10000バイト制限や、201 <code>nOpCount</code>などの元々のコンセンサスの制約の多くは、そのままP2SH-P2WSHにも適用されます。
@@ -172,6 +172,6 @@ version: 1
 * [Examples of different witness transaction types and transaction validity checking tool](https://blockchainprogramming.azurewebsites.net/checktx)
 * [BIP141][]
 * [BIP143][]
-* [Script tests](https://github.com/bitcoin/bitcoin/blob/master/src/test/data/script_tests.json)
-* [Valid transaction tests](https://github.com/bitcoin/bitcoin/blob/master/src/test/data/tx_valid.json)
-* [Invalid transaction tests](https://github.com/bitcoin/bitcoin/blob/master/src/test/data/tx_invalid.json)
+* [Script tests](https://github.com/aixcoin/aixcoin/blob/master/src/test/data/script_tests.json)
+* [Valid transaction tests](https://github.com/aixcoin/aixcoin/blob/master/src/test/data/tx_valid.json)
+* [Invalid transaction tests](https://github.com/aixcoin/aixcoin/blob/master/src/test/data/tx_invalid.json)

@@ -18,7 +18,7 @@ Result:
   "type" : "str",             (string) The output type (e.g. nonstandard, pubkey, pubkeyhash, scripthash, multisig, nulldata, witness_v0_scripthash, witness_v0_keyhash, witness_v1_taproot, witness_unknown)
   "reqSigs" : n,              (numeric) The required signatures
   "addresses" : [             (json array)
-    "str",                    (string) bitcoin address
+    "str",                    (string) aixcoin address
     ...
   ],
   "p2sh" : "str",             (string) address of P2SH script wrapping this redeem script (not returned if the script is already a P2SH)
@@ -36,7 +36,7 @@ Result:
 }
 
 Examples:
-> bitcoin-cli decodescript "hexstring"
+> aixcoin-cli decodescript "hexstring"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "decodescript", "params": ["hexstring"]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 

@@ -19,13 +19,13 @@ amount              (numeric) The total amount in BTC received for this account.
 Examples:
 
 Amount received by the default account with at least 1 confirmation
-> bitcoin-cli getreceivedbyaccount ""
+> aixcoin-cli getreceivedbyaccount ""
 
 Amount received at the tabby account including unconfirmed amounts with zero confirmations
-> bitcoin-cli getreceivedbyaccount "tabby" 0
+> aixcoin-cli getreceivedbyaccount "tabby" 0
 
 The amount with at least 6 confirmations
-> bitcoin-cli getreceivedbyaccount "tabby" 6
+> aixcoin-cli getreceivedbyaccount "tabby" 6
 
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getreceivedbyaccount", "params": ["tabby", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/

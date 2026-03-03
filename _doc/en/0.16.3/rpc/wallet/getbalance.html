@@ -36,10 +36,10 @@ amount              (numeric) The total amount in BTC received for this account.
 Examples:
 
 The total amount in the wallet with 1 or more confirmations
-> bitcoin-cli getbalance 
+> aixcoin-cli getbalance 
 
 The total amount in the wallet at least 6 blocks confirmed
-> bitcoin-cli getbalance "*" 6
+> aixcoin-cli getbalance "*" 6
 
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbalance", "params": ["*", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/

@@ -20,7 +20,7 @@ Result:
   {
     "account":"accountname",       (string) DEPRECATED. The account name associated with the transaction. 
                                                 It will be "" for the default account.
-    "address":"address",    (string) The bitcoin address of the transaction. Not present for 
+    "address":"address",    (string) The aixcoin address of the transaction. Not present for 
                                                 move transactions (category = move).
     "category":"send|receive|move", (string) The transaction category. 'move' is a local (off blockchain)
                                                 transaction between accounts, and not associated with an address,
@@ -60,10 +60,10 @@ Result:
 Examples:
 
 List the most recent 10 transactions in the systems
-> bitcoin-cli listtransactions 
+> aixcoin-cli listtransactions 
 
 List transactions 100 to 120
-> bitcoin-cli listtransactions "*" 20 100
+> aixcoin-cli listtransactions "*" 20 100
 
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listtransactions", "params": ["*", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/

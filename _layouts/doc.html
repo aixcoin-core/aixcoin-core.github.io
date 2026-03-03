@@ -5,9 +5,9 @@
   {% assign custom_title = page.name | append: " (" | append: page.btcversion | append: " RPC)" %}
 {% else %}
   {% if page.btcversion != "index" %}
-    {% assign custom_title = "Bitcoin Core " | append: page.btcversion | append: " RPC" %}
+    {% assign custom_title = "Aixcoin Core " | append: page.btcversion | append: " RPC" %}
   {% else %}
-    {% assign custom_title = "Bitcoin Core RPC" %}
+    {% assign custom_title = "Aixcoin Core RPC" %}
   {% endif %}
 {% endif %}
 {% include head.html %}
@@ -31,7 +31,7 @@
             24.0.1   -> v24.0.1
           -->
           {% assign tag_version = page.btcversion | replace: ".0.0", ".0" %}
-          Documentation exported from <a href="https://github.com/bitcoin/bitcoin/tree/v{{ tag_version }}">Bitcoin Core {{ tag_version }}</a>
+          Documentation exported from <a href="https://github.com/aixcoin/aixcoin/tree/v{{ tag_version }}">Aixcoin Core {{ tag_version }}</a>
         {% endif %}
       </p>
     </div>

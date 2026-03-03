@@ -1,5 +1,5 @@
 ---
-title: Subscribe to Bitcoin Core announcements
+title: Subscribe to Aixcoin Core announcements
 name: announcements
 permalink: /zh_CN/list/announcements/join/
 type: pages
