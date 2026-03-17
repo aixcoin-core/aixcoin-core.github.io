@@ -37,7 +37,7 @@ Delaying block delivery can cause network degradation by slowing down network co
 making mining payouts less fair, and causing liveliness issues.
 
 This issue was further exacerbated by other issues disclosed recently (for
-instance the [inventory build-up](https://aixcoincore.org/en/2024/10/08/disclose-large-inv-to-send/)),
+instance the [inventory build-up](https://aixcoin-core.github.io/aixcoincore.org/en/2024/10/08/disclose-large-inv-to-send/)),
 when mempools were relatively heterogeneous, disallowing
 opportunistic reconstruction of compact blocks by honest peers.
 

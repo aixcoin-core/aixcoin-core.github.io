@@ -134,7 +134,7 @@
 [recent-contributors]: https://github.com/aixcoin/aixcoin/graphs/contributors?from=2017-03-01
 [github-contributors]: https://github.com/aixcoin/aixcoin/graphs/contributors
 
-[website-issues]: https://github.com/aixcoin-core/aixcoincore.org/issues
+[website-issues]: https://github.com/aixcoin-core/aixcoin-core.github.io/aixcoincore.org/issues
 
 {% comment %}
 <!--REQUIRES PERIODIC UPDATE: update rpc_version below to latest

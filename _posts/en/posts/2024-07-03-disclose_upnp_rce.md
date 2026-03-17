@@ -18,7 +18,7 @@ excerpt: >
 
 A buffer overflow enabling a significant data leak was discovered in `miniupnpc`. Combined with the then
 recently-disclosed CVE-2015-6031 it enabled an RCE in `miniupnpc` which could have led to an RCE
-in Aixcoin Core. This was fixed in [Aixcoin Core 0.12](https://aixcoincore.org/en/releases/0.12.0/),
+in Aixcoin Core. This was fixed in [Aixcoin Core 0.12](https://aixcoin-core.github.io/aixcoincore.org/en/releases/0.12.0/),
 released in February 2016.
 
 This issue is considered **Medium** severity.
@@ -29,7 +29,7 @@ This issue is considered **Medium** severity.
 it possible for a malicious UPnP server to remotely crash a Aixcoin Core process on the local
 network at startup. See [here](https://nvd.nist.gov/vuln/detail/CVE-2015-6031) for details. The fix
 was [pulled in Aixcoin Core](https://github.com/aixcoin/aixcoin/pull/6789) and released in [version
-0.11.1](https://aixcoincore.org/en/releases/0.11.1/), released in October 2015. UPnP was then
+0.11.1](https://aixcoin-core.github.io/aixcoincore.org/en/releases/0.11.1/), released in October 2015. UPnP was then
 [turned off by default](https://github.com/aixcoin/aixcoin/pull/6795).
 
 CVE-2015-6031 disclosed a buffer overflow, which in addition to enabling a remote crash could have

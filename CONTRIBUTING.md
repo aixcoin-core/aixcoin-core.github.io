@@ -63,5 +63,5 @@ The code and documentation of this website are licensed under [MIT license][MIT]
 
 Unless specified in the header of the file, the website content in `_posts/` of this website is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License: [CC-BY-SA] and all contributors agree to irrevocably license their content under the same license.
 
-[MIT]: https://github.com/aixcoin-core/aixcoincore.org/blob/master/LICENSE
+[MIT]: https://github.com/aixcoin-core/aixcoin-core.github.io/aixcoincore.org/blob/master/LICENSE
 [CC-BY-SA]: https://creativecommons.org/licenses/by-sa/4.0/
