@@ -22,7 +22,7 @@ do
   ## Handle relative and absolute URLs differently
   if [ "${url##http*}" ]
   then
-    curl -sI "https://aixcoincore.org${url}"
+    curl -sI "https://aixcoin-core.github.io${url}"
   else
     curl -sI "$url"
   fi | egrep -q '(200 OK|HTTP/2 200)' || echo "Error: Could not retrieve $url"

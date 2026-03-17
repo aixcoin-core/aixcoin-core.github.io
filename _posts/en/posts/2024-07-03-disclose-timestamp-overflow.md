@@ -43,7 +43,7 @@ at-risk code.
 
 ## Timeline
 
-* 2020-10-10 Initial report send to security@aixcoincore.org
+* 2020-10-10 Initial report send to security@aixcoin-core.github.io
 * 2020-10-13 Fix merged into Aixcoin Core (https://github.com/aixcoin/aixcoin/pull/20141)
 * 2021-01-15 v0.21.0 released
 * 2022-04-25 The last vulnerable Aixcoin Core version (0.20.x) goes EOL

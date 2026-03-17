@@ -36,7 +36,7 @@ https://github.com/aixcoin/aixcoin/pull/22387
 
 ## タイムライン {#timeline}
 
-* 2021-06-21 - Eugene Siegelによる最初のレポートがsecurity@aixcoincore.orgに送信される
+* 2021-06-21 - Eugene Siegelによる最初のレポートがsecurity@aixcoin-core.github.ioに送信される
 * 2021-07-19 - 修正がマージされる(https://github.com/aixcoin/aixcoin/pull/22387)
 * 2021-09-13 - v22.0がリリースされる
 * 2024-07-31 - 公開

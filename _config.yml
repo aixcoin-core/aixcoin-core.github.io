@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: Aixcoin Core
-url: https://aixcoincore.org
+url: https://aixcoin-core.github.io
 transifex_url: https://www.transifex.com/aixcoincore/aixcoincoreorg
 
 # Jekyll configuration

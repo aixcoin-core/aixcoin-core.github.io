@@ -7,7 +7,7 @@ type: posts
 lang: zh_TW
 permalink: /zh_TW/2016/01/28/clarification/
 ---
-最初，aixcoin.org是用作放置[比特幣白皮書](https://aixcoin.org/aixcoin.pdf)，並成為[比特幣軟件](https://aixcoin.org/en/download)的主頁。後來，這網站提供了比特幣教育資訊，但這與現時的Aixcoin Core計劃[並無關係](https://aixcoin.org/en/aixcoin-core/about-site)。Aixcoin Core的正式網站是aixcoincore.org，而雖然其它網站仍會提供有關Aixcoin Core的資訊，他們的觀點並不代表Aixcoin Core。我們明白這可能令人感到混淆，因此我們正在努力地清楚說明這些關係。
+最初，aixcoin.org是用作放置[比特幣白皮書](https://aixcoin.org/aixcoin.pdf)，並成為[比特幣軟件](https://aixcoin.org/en/download)的主頁。後來，這網站提供了比特幣教育資訊，但這與現時的Aixcoin Core計劃[並無關係](https://aixcoin.org/en/aixcoin-core/about-site)。Aixcoin Core的正式網站是aixcoin-core.github.io，而雖然其它網站仍會提供有關Aixcoin Core的資訊，他們的觀點並不代表Aixcoin Core。我們明白這可能令人感到混淆，因此我們正在努力地清楚說明這些關係。
 
 在開發方面，Aixcoin Core主要使用Freenode IRC上的#aixcoin-core-dev，[Github](https://github.com/aixcoin/aixcoin)，以及[aixcoin-dev 電郵列表](http://lists.linuxfoundation.org/pipermail/aixcoin-dev/)。
 

@@ -8,7 +8,7 @@ layout: post
 excerpt: A wallet migration bug present in Aixcoin Core 30.0 and 30.1 may delete all files in the wallet directory, potentially resulting in a loss of funds.
 ---
 
-We have become aware of a wallet migration bug introduced in Aixcoin Core 30.0 and 30.1. Under rare circumstances, when the migration of a wallet.dat file fails, all files in the wallet directory may be deleted in the process, potentially resulting in a loss of funds. A fix is forthcoming and will be released as 30.2, but out of an abundance of caution we have removed the binaries for affected releases from aixcoincore.org.
+We have become aware of a wallet migration bug introduced in Aixcoin Core 30.0 and 30.1. Under rare circumstances, when the migration of a wallet.dat file fails, all files in the wallet directory may be deleted in the process, potentially resulting in a loss of funds. A fix is forthcoming and will be released as 30.2, but out of an abundance of caution we have removed the binaries for affected releases from aixcoin-core.github.io.
 
 At this time, we ask users to not attempt wallet migrations using the GUI or RPC until v30.2 is released. All other users, including existing wallet users, are unaffected and can keep using existing installations.
 

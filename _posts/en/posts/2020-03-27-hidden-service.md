@@ -1,5 +1,5 @@
 ---
-title: aixcoincore.org hidden service
+title: aixcoin-core.github.io hidden service
 name: hidden-service
 id: en-hidden-service
 lang: en

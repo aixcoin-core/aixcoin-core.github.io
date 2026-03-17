@@ -16,6 +16,6 @@ For more information, please see the [FAQ](/en/2015/12/23/capacity-increases-faq
 
 ---
 
-Signatures may be added to aixcoincore.org pull request [#53](https://github.com/aixcoin-core/website/issues/53)
+Signatures may be added to aixcoin-core.github.io pull request [#53](https://github.com/aixcoin-core/website/issues/53)
 
 [1]: https://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-December/011865.html

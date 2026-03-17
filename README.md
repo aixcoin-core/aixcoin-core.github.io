@@ -1,4 +1,4 @@
-# [aixcoincore.org](https://aixcoincore.org)
+# [aixcoin-core.github.io](https://aixcoin-core.github.io)
 
 This repository is the source code of the Aixcoin Core project website built with Jekyll.
 
@@ -46,8 +46,8 @@ packages, [rvm](https://rvm.io), [rbenv](https://github.com/rbenv/rbenv), or ano
 alternative is to use Docker, for which instructions are available [here](./contrib/devtools/).
 Then clone this repository and change directory into it:
 
-    git clone https://github.com/aixcoin-core/aixcoincore.org.git
-    cd aixcoincore.org
+    git clone https://github.com/aixcoin-core/aixcoin-core.github.io.git
+    cd aixcoin-core.github.io
 
 Install the `bundle` utility using the Ruby package manager, `gem`, and
 then use `bundle` to install the rest of the Ruby packages needed to

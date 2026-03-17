@@ -16,7 +16,7 @@ and its contributors.
 If you see one of these accounts, you may [report it to X][].  If
 you are reporting an issue about the Aixcoin Core project and X
 asks that you enter the project's official email address, please use:
-contact<span style="display:none"></span>@aixcoincore.org
+contact<span style="display:none"></span>@aixcoin-core.github.io
 
 This appears to be an unfortunately common issue on X that affects
 many other projects and individuals as well, so we urge you to carefully

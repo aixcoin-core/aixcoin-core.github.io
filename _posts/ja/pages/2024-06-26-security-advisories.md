@@ -15,7 +15,7 @@ version: 1
 
 ## ポリシー {#policy}
 
-すべての脆弱性は、security@aixcoincore.org までご報告ください（詳細は、
+すべての脆弱性は、security@aixcoin-core.github.io までご報告ください（詳細は、
 [SECURITY.md](https://github.com/aixcoin/aixcoin/blob/master/SECURITY.md)をご覧ください）。
 脆弱性が報告されると、重大度のカテゴリが割り当てられます。私たちは脆弱性を4つのクラスで区別します。
 

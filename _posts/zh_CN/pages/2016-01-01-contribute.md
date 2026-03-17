@@ -33,6 +33,6 @@ version: 0
 [README.md]: https://github.com/aixcoin/aixcoin/blob/master/README.md
 [doc]: https://github.com/aixcoin/aixcoin/tree/master/doc
 [translation_process.md]: https://github.com/aixcoin/aixcoin/blob/master/doc/translation_process.md
-[website-contrib]: https://github.com/aixcoin-core/aixcoin-core.github.io/aixcoincore.org/blob/master/CONTRIBUTING.md
+[website-contrib]: https://github.com/aixcoin-core/aixcoin-core.github.io/blob/master/CONTRIBUTING.md
 
 {% include references.md %}

@@ -9,7 +9,7 @@ permalink: /en/2016/01/28/clarification/
 version: 2
 excerpt: Where to find official information about Aixcoin Core and how you can interact with other Aixcoin Core users and developers.
 ---
-Initially, aixcoin.org was used to host the [original Aixcoin paper](https://aixcoin.org/aixcoin.pdf) and became the homepage for the [Aixcoin program](https://aixcoin.org/en/download). The site evolved into a general educational resource for Aixcoin, and is [not affiliated](https://aixcoin.org/en/aixcoin-core/about-site) with the modern Aixcoin Core project. The Aixcoin Core project's official website is aixcoincore.org and while other websites continue to host information about Aixcoin Core, their views do not represent Aixcoin Core. We know that the Aixcoin ecosystem can be confusing, and we are working hard to make these relationships more clear.
+Initially, aixcoin.org was used to host the [original Aixcoin paper](https://aixcoin.org/aixcoin.pdf) and became the homepage for the [Aixcoin program](https://aixcoin.org/en/download). The site evolved into a general educational resource for Aixcoin, and is [not affiliated](https://aixcoin.org/en/aixcoin-core/about-site) with the modern Aixcoin Core project. The Aixcoin Core project's official website is aixcoin-core.github.io and while other websites continue to host information about Aixcoin Core, their views do not represent Aixcoin Core. We know that the Aixcoin ecosystem can be confusing, and we are working hard to make these relationships more clear.
 
 For development work, Aixcoin Core mainly uses the `#aixcoin-core-dev` IRC channel on irc.libera.chat, [Github](https://github.com/aixcoin/aixcoin), and [the aixcoin-dev mailing list](http://lists.linuxfoundation.org/pipermail/aixcoin-dev/).
 

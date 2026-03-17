@@ -43,7 +43,7 @@ excerpt: >
 
 ## タイムライン {#timeline}
 
-* 2020-10-10 最初の報告がsecurity@aixcoincore.orgに送信される
+* 2020-10-10 最初の報告がsecurity@aixcoin-core.github.ioに送信される
 * 2020-10-13 修正がAixcoin Coreにマージされる(https://github.com/aixcoin/aixcoin/pull/20141)
 * 2021-01-15 v0.21.0がリリースされる
 * 2022-04-25 脆弱性のある最後のバージョンのAixcoin Core(0.20.x)がEOLになる

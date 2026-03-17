@@ -37,7 +37,7 @@ https://github.com/aixcoin/aixcoin/pull/22387.
 
 ## Timeline
 
-* 2021-06-21 - Initial report sent to security@aixcoincore.org by Eugene Siegel
+* 2021-06-21 - Initial report sent to security@aixcoin-core.github.io by Eugene Siegel
 * 2021-07-19 - Fix is merged (https://github.com/aixcoin/aixcoin/pull/22387)
 * 2021-09-13 - v22.0 is released
 * 2024-07-31 - Public disclosure

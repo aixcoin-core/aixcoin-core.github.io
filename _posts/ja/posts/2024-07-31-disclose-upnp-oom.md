@@ -41,7 +41,7 @@ Aixcoin Coreプロジェクトに報告してくれたMichael Ford (Fanquake)に
 ## タイムライン {#timeline}
 
 * 2020-09-17 - Ronald Huveneersによる無限ループバグのminiupnpへの最初の報告
-* 2020-10-13 - Michael Fordによる最初のレポートがsecurity@aixcoincore.orgに送信される
+* 2020-10-13 - Michael Fordによる最初のレポートがsecurity@aixcoin-core.github.ioに送信される
 * 2021-03-23 - 修正がマージされる(https://github.com/aixcoin/aixcoin/pull/20421)
 * 2021-09-13 - v22.0がリリースされる
 * 2024-07-31 - 公開

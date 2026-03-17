@@ -2,7 +2,7 @@
 {% capture PATH_PREFIX %}/bin/aixcoin-core-{{RELEASE}}{% endcapture %}
 {% capture FILE_PREFIX %}aixcoin-{{RELEASE}}{% endcapture %}
 {% assign magnet=page.optional_magnetlink %}
-<https://aixcoincore.org{{ PATH_PREFIX }}/>
+<https://aixcoin-core.github.io{{ PATH_PREFIX }}/>
 
-<a href="https://aixcoincore.org{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl">Download torrent</a>
+<a href="https://aixcoin-core.github.io{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl">Download torrent</a>
   {% if magnet %} <a href="{{ magnet | replace: '&', '\&amp;'}}" class="magnetlink" data-proofer-ignore></a>{% endif %}<br>

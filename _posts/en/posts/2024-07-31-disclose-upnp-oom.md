@@ -44,7 +44,7 @@ bump the dependency (containing the fix).
 ## Timeline
 
 * 2020-09-17 - Initial report of infinite loop bug to miniupnp by Ronald Huveneers
-* 2020-10-13 - Initial report sent to security@aixcoincore.org by Michael Ford
+* 2020-10-13 - Initial report sent to security@aixcoin-core.github.io by Michael Ford
 * 2021-03-23 - Fix is merged (https://github.com/aixcoin/aixcoin/pull/20421)
 * 2021-09-13 - v22.0 is released
 * 2024-07-31 - Public disclosure

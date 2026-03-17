@@ -1,5 +1,5 @@
 This issue tracker is for issues with the Aixcoin Core project website at
-[aixcoincore.org](https://aixcoincore.org).
+[aixcoin-core.github.io](https://aixcoin-core.github.io).
 
 [aixcoin.org](https://aixcoin.org) is not connected with or maintained by the
 Aixcoin Core project contributors. Issues with that website should be reported

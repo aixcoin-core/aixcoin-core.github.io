@@ -15,7 +15,7 @@ as well as provides a summary of historical Security Advisories.
 
 ## Policy
 
-All vulnerabilities should be reported to security@aixcoincore.org (see
+All vulnerabilities should be reported to security@aixcoin-core.github.io (see
 [SECURITY.md](https://github.com/aixcoin/aixcoin/blob/master/SECURITY.md) for
 details). When reported, a vulnerability will be assigned a severity category.
 We differentiate between 4 classes of vulnerabilities:

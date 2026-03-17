@@ -1,5 +1,5 @@
 Use this page to open Pull requests for changes to the Aixcoin Core project
-website at [aixcoincore.org](https://aixcoincore.org).
+website at [aixcoin-core.github.io](https://aixcoin-core.github.io).
 
 [aixcoin.org](https://aixcoin.org) is not connected with or maintained by the
 Aixcoin Core project contributors. Pull requests for changes to that website
